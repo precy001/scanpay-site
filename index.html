@@ -275,6 +275,40 @@
     .reveal{opacity:1;transform:none}
     .hero h1 .w,.hero p.sub,.cta-row,.notify,.demo{opacity:1}
   }
+
+  /* ---------- admin ---------- */
+  .admin-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}
+  .admin-card{width:100%;max-width:400px;background:var(--surface);border:1px solid var(--line2);border-radius:20px;padding:34px}
+  .admin-h1{font-family:var(--display);font-weight:600;font-size:1.7rem;letter-spacing:-.02em;margin-top:14px}
+  .admin-sub{color:var(--muted);font-size:.98rem;margin-top:6px;margin-bottom:22px}
+  .admin-label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:16px 0 7px}
+  .admin-input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:12px;padding:13px 14px;color:var(--text);font-family:var(--body);font-size:15px;outline:none;transition:border-color .2s}
+  .admin-input:focus{border-color:var(--primary)}
+  .admin-btn{width:100%;margin-top:22px;justify-content:center}
+  .admin-error{color:#ff6b8a;font-size:14px;margin-top:14px}
+  .admin-back{display:inline-block;margin-top:20px;color:var(--muted);font-size:14px}
+  .admin-back:hover{color:var(--text)}
+  .admin-dash{min-height:100vh}
+  .admin-topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid var(--line);backdrop-filter:blur(14px);background:rgba(10,14,32,.6)}
+  .admin-tag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;background:var(--accent);color:var(--accent-ink);padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle}
+  .admin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+  .admin-tile{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .admin-tile-label{font-family:var(--display);font-weight:600;font-size:1.3rem}
+  .admin-tile-hint{color:var(--muted);font-size:.95rem;margin-top:6px}
+  .admin-tile-soon{font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:18px}
+  .admin-note{color:var(--dim);font-size:13px;margin-top:28px}
+
+  .admin-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .admin-tabbtn{font-family:var(--body);font-size:14px;font-weight:600;color:var(--muted);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:10px;padding:9px 16px;cursor:pointer;transition:.2s}
+  .admin-tabbtn:hover{color:var(--text)}
+  .admin-tabbtn.on{background:var(--grad);color:#fff;border-color:transparent}
+  .admin-stat{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:-.02em;margin-top:8px}
+  .admin-tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+  .admin-table{width:100%;border-collapse:collapse;font-size:14px}
+  .admin-table th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:14px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .admin-table td{padding:13px 16px;border-bottom:1px solid var(--line);color:var(--text);white-space:nowrap}
+  .admin-table tr:last-child td{border-bottom:none}
+  .admin-table tbody tr:hover{background:rgba(255,255,255,.03)}
 </style>
 </head>
 <body>
@@ -605,7 +639,197 @@ function App(){
     <Nav/><Hero/><How/><Features/><Security/><FAQ/><Final/><Footer/>
   </React.Fragment>);
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+
+// ---------------------------------------------------------------------------
+// Admin area (#/admin)
+// ---------------------------------------------------------------------------
+// The dashboard is a public *page*, but every piece of data behind it is gated
+// by the backend: login posts to /admin/login, which verifies credentials held
+// as env vars on the server and returns a token. No credentials live here.
+const ADMIN_API = "https://payxchange.fly.dev";
+
+function AdminLogin({ onAuthed }){
+  const [username,setUsername]=useState("");
+  const [password,setPassword]=useState("");
+  const [error,setError]=useState(null);
+  const [loading,setLoading]=useState(false);
+
+  const submit=async(e)=>{
+    e.preventDefault();
+    setError(null); setLoading(true);
+    try{
+      const res=await fetch(`${ADMIN_API}/admin/login`,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({username,password}),
+      });
+      if(!res.ok){
+        setError(res.status===401?"Incorrect username or password.":"Could not sign in. Try again.");
+        setLoading(false);
+        return;
+      }
+      const data=await res.json();
+      if(!data?.token){ setError("Unexpected response from server."); setLoading(false); return; }
+      onAuthed(data.token);
+    }catch{
+      setError("Can't reach the server. Check your connection.");
+      setLoading(false);
+    }
+  };
+
+  return(
+    <div className="admin-wrap">
+      <div className="admin-card">
+        <div className="brand" style={{marginBottom:8}}><div className="badge">PX</div>PayXchange</div>
+        <h1 className="admin-h1">Admin sign in</h1>
+        <p className="admin-sub">Authorised access only.</p>
+        <form onSubmit={submit}>
+          <label className="admin-label">Username</label>
+          <input className="admin-input" value={username} onChange={e=>setUsername(e.target.value)} autoCapitalize="none" autoComplete="username" required/>
+          <label className="admin-label">Password</label>
+          <input className="admin-input" type="password" value={password} onChange={e=>setPassword(e.target.value)} autoComplete="current-password" required/>
+          {error && <div className="admin-error">{error}</div>}
+          <button className="btn btn-primary admin-btn" type="submit" disabled={loading}>{loading?"Signing in…":"Sign in"}</button>
+        </form>
+        <a href="#/" className="admin-back">← Back to site</a>
+      </div>
+    </div>
+  );
+}
+
+function naira(kobo){ return "₦"+(Number(kobo||0)/100).toLocaleString('en-US'); }
+function shortDate(s){ try{ return new Date(s).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}); }catch{ return ""; } }
+
+function AdminDashboard({ token, onLogout }){
+  const [tab,setTab]=useState("overview");
+  const [stats,setStats]=useState(null);
+  const [rows,setRows]=useState({});
+  const [loading,setLoading]=useState(true);
+  const [err,setErr]=useState(null);
+
+  const authGet=async(path)=>{
+    const res=await fetch(`${ADMIN_API}${path}`,{headers:{Authorization:`Bearer ${token}`}});
+    if(res.status===401){ throw new Error("session"); }
+    if(!res.ok) throw new Error("load");
+    return res.json();
+  };
+
+  useEffect(()=>{
+    let live=true;
+    (async()=>{
+      setLoading(true); setErr(null);
+      try{
+        const [s,users,txns,refs,disputes]=await Promise.all([
+          authGet("/admin/stats"), authGet("/admin/users"), authGet("/admin/transactions"),
+          authGet("/admin/referrals"), authGet("/admin/disputes"),
+        ]);
+        if(!live) return;
+        setStats(s);
+        setRows({users,txns,refs,disputes});
+      }catch(e){
+        if(!live) return;
+        if(e.message==="session"){ onLogout(); return; }
+        setErr("Could not load dashboard data.");
+      }finally{ if(live) setLoading(false); }
+    })();
+    return ()=>{ live=false; };
+  },[token]);
+
+  const tabs=[["overview","Overview"],["users","Users"],["txns","Transactions"],["refs","Referrals"],["disputes","Disputes"]];
+
+  return(
+    <div className="admin-dash">
+      <div className="admin-topbar">
+        <div className="brand"><div className="badge">PX</div>PayXchange <span className="admin-tag">Admin</span></div>
+        <button className="btn btn-ghost" onClick={onLogout} style={{padding:'8px 16px'}}>Log out</button>
+      </div>
+      <div className="wrap" style={{paddingTop:28,paddingBottom:80}}>
+        <div className="admin-tabs">
+          {tabs.map(([k,label])=>(
+            <button key={k} className={"admin-tabbtn"+(tab===k?" on":"")} onClick={()=>setTab(k)}>{label}</button>
+          ))}
+        </div>
+
+        {loading ? <p className="admin-note">Loading…</p> :
+         err ? <p className="admin-error">{err}</p> :
+         <React.Fragment>
+
+          {tab==="overview" && stats &&
+            <div className="admin-grid">
+              <Stat label="Users" value={stats.users}/>
+              <Stat label="Transactions" value={stats.txns}/>
+              <Stat label="Completed" value={stats.completed}/>
+              <Stat label="Volume" value={naira(stats.volumeKobo)}/>
+              <Stat label="Qualified referrals" value={stats.referralsQualified}/>
+              <Stat label="Open disputes" value={stats.disputesOpen}/>
+              <Stat label="Rewards claimed" value={stats.rewardsClaimed}/>
+            </div>}
+
+          {tab==="users" &&
+            <Table head={["Phone","Name","Verified","Code","Joined"]}
+                   rows={(rows.users||[]).map(u=>[u.phone,u.full_name||"—",u.phone_verified?"Yes":"No",u.referral_code||"—",shortDate(u.created_at)])}/>}
+
+          {tab==="txns" &&
+            <Table head={["Payer","Payee","Amount","Fee","State","When"]}
+                   rows={(rows.txns||[]).map(t=>[t.payer_phone,t.payee_phone,naira(t.amount_kobo),naira(t.fee_kobo),t.state,shortDate(t.created_at)])}/>}
+
+          {tab==="refs" &&
+            <React.Fragment>
+              <p className="admin-note" style={{marginTop:0,marginBottom:14}}>Verify a claim: a referrer is eligible for ₦15,000 at 50 qualified. "Claimed" means they've already tapped claim in-app.</p>
+              <Table head={["Referrer","Phone","Code","Signed up","Qualified","Claimed"]}
+                     rows={(rows.refs||[]).map(r=>[
+                       r.full_name||"—", r.phone, r.referral_code||"—",
+                       String(r.signed_up), String(r.qualified),
+                       r.referral_reward_claimed_at?"Yes":(Number(r.qualified)>=50?"ELIGIBLE":"No"),
+                     ])}/>
+            </React.Fragment>}
+
+          {tab==="disputes" &&
+            <Table head={["User","Reason","Status","When"]}
+                   rows={(rows.disputes||[]).map(d=>[d.user_phone,d.reason,d.status,shortDate(d.created_at)])}/>}
+
+         </React.Fragment>}
+      </div>
+    </div>
+  );
+}
+
+function Stat({label,value}){
+  return(<div className="admin-tile"><div className="admin-tile-hint">{label}</div><div className="admin-stat">{value}</div></div>);
+}
+
+function Table({head,rows}){
+  if(!rows.length) return <p className="admin-note">Nothing here yet.</p>;
+  return(
+    <div className="admin-tablewrap">
+      <table className="admin-table">
+        <thead><tr>{head.map((h,i)=><th key={i}>{h}</th>)}</tr></thead>
+        <tbody>{rows.map((r,i)=><tr key={i}>{r.map((c,j)=><td key={j}>{c}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  );
+}
+
+function AdminRoot(){
+  const [token,setToken]=useState(null);
+  return token
+    ? <AdminDashboard token={token} onLogout={()=>setToken(null)}/>
+    : <AdminLogin onAuthed={setToken}/>;
+}
+
+// Minimal hash router: '#/admin' → admin area, anything else → landing page.
+function Root(){
+  const [hash,setHash]=useState(window.location.hash);
+  useEffect(()=>{
+    const on=()=>setHash(window.location.hash);
+    window.addEventListener('hashchange',on);
+    return()=>window.removeEventListener('hashchange',on);
+  },[]);
+  const isAdmin=hash.replace(/^#/,'').replace(/^\//,'').toLowerCase().startsWith('admin');
+  return isAdmin ? <AdminRoot/> : <App/>;
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Root/>);
 </script>
 </body>
 </html>
