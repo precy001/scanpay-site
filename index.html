@@ -336,7 +336,7 @@ const I = {
 const Apple=(p)=><svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M16.365 1.43c0 1.14-.42 2.2-1.12 3-.79.9-2.08 1.6-3.16 1.5-.13-1.08.4-2.24 1.09-3.02.77-.87 2.12-1.55 3.19-1.48zM20.5 17.02c-.55 1.27-.82 1.83-1.53 2.95-.99 1.56-2.38 3.5-4.1 3.51-1.53.02-1.92-.99-4-.98-2.07.01-2.5.99-4.03.97-1.72-.02-3.04-1.78-4.03-3.34C.03 17.5-.4 13.06 1.4 10.5c1.02-1.47 2.63-2.4 4.11-2.4 1.5 0 2.45 1 3.7 1 1.2 0 1.93-1 3.67-1 1.31 0 2.7.72 3.69 1.95-3.24 1.78-2.72 6.4.23 7.97z"/></svg>;
 const Play=(p)=><svg viewBox="0 0 24 24" {...p}><path fill="#38E8A0" d="M4 3.5v17l9-8.5z" opacity=".95"/><path fill="#6D5EF6" d="M4 3.5l9 8.5-9 8.5c-.5-.2-.8-.7-.8-1.4V4.9c0-.7.3-1.2.8-1.4z"/><path fill="#B84DF0" d="M13 12l3.6-3.4 2.9 1.7c1 .6 1 1.8 0 2.4l-2.9 1.7z"/></svg>;
 
-const APK_URL="https://expo.dev/artifacts/eas/fKxnCzfMr2i_NMT4HQNxho55PGkmZIx4n7ccooCA0aY.apk";
+const APK_URL="https://expo.dev/artifacts/eas/Nrq2LVf5cv2Ymg8_J_2u5IH69xE8ccycyov_8OHbqVM.apk";
 
 function Stores(){
   return(
@@ -719,13 +719,13 @@ function AdminDashboard({ token, onLogout }){
     (async()=>{
       setLoading(true); setErr(null);
       try{
-        const [s,users,txns,refs,disputes]=await Promise.all([
+        const [s,users,txns,rewards,disputes]=await Promise.all([
           authGet("/admin/stats"), authGet("/admin/users"), authGet("/admin/transactions"),
-          authGet("/admin/referrals"), authGet("/admin/disputes"),
+          authGet("/admin/daily-rewards"), authGet("/admin/disputes"),
         ]);
         if(!live) return;
         setStats(s);
-        setRows({users,txns,refs,disputes});
+        setRows({users,txns,rewards,disputes});
       }catch(e){
         if(!live) return;
         if(e.message==="session"){ onLogout(); return; }
@@ -735,7 +735,7 @@ function AdminDashboard({ token, onLogout }){
     return ()=>{ live=false; };
   },[token]);
 
-  const tabs=[["overview","Overview"],["users","Users"],["txns","Transactions"],["refs","Referrals"],["disputes","Disputes"]];
+  const tabs=[["overview","Overview"],["users","Users"],["txns","Transactions"],["rewards","Daily Rewards"],["disputes","Disputes"]];
 
   return(
     <div className="admin-dash">
@@ -760,9 +760,8 @@ function AdminDashboard({ token, onLogout }){
               <Stat label="Transactions" value={stats.txns}/>
               <Stat label="Completed" value={stats.completed}/>
               <Stat label="Volume" value={naira(stats.volumeKobo)}/>
-              <Stat label="Qualified referrals" value={stats.referralsQualified}/>
               <Stat label="Open disputes" value={stats.disputesOpen}/>
-              <Stat label="Rewards claimed" value={stats.rewardsClaimed}/>
+              <Stat label="Daily reward claims (today)" value={stats.dailyClaimsToday}/>
             </div>}
 
           {tab==="users" &&
@@ -773,14 +772,13 @@ function AdminDashboard({ token, onLogout }){
             <Table head={["Payer","Payee","Amount","Fee","State","When"]}
                    rows={(rows.txns||[]).map(t=>[t.payer_phone,t.payee_phone,naira(t.amount_kobo),naira(t.fee_kobo),t.state,shortDate(t.created_at)])}/>}
 
-          {tab==="refs" &&
+          {tab==="rewards" &&
             <React.Fragment>
-              <p className="admin-note" style={{marginTop:0,marginBottom:14}}>Verify a claim: a referrer is eligible for ₦15,000 at 50 qualified. "Claimed" means they've already tapped claim in-app.</p>
-              <Table head={["Referrer","Phone","Code","Signed up","Qualified","Claimed"]}
-                     rows={(rows.refs||[]).map(r=>[
-                       r.full_name||"—", r.phone, r.referral_code||"—",
-                       String(r.signed_up), String(r.qualified),
-                       r.referral_reward_claimed_at?"Yes":(Number(r.qualified)>=50?"ELIGIBLE":"No"),
+              <p className="admin-note" style={{marginTop:0,marginBottom:14}}>Verify a claim: eligible at 50 counted transactions today (same-person capped at 5/day). Resets daily. "Claimed" means they've already tapped claim in-app today.</p>
+              <Table head={["User","Phone","Counted today","Status"]}
+                     rows={(rows.rewards||[]).map(r=>[
+                       r.full_name||"—", r.phone, String(r.counted),
+                       r.claimed_at?"Claimed":(Number(r.counted)>=50?"ELIGIBLE":"In progress"),
                      ])}/>
             </React.Fragment>}
 
