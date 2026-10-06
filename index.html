@@ -309,11 +309,1975 @@
   .admin-table td{padding:13px 16px;border-bottom:1px solid var(--line);color:var(--text);white-space:nowrap}
   .admin-table tr:last-child td{border-bottom:none}
   .admin-table tbody tr:hover{background:rgba(255,255,255,.03)}
+
+/* Embedded Privacy Policy page */
+.privacy-page{min-height:100vh;background:#0A0E20;color:#EEF0FA;font-family:'Satoshi',sans-serif;line-height:1.7}
+.privacy-page a{color:#EEF0FA}
+.privacy-page .top{position:sticky;top:0;z-index:5;background:rgba(10,14,32,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.privacy-page .nav{max-width:1000px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}.privacy-page .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:19px}.privacy-page .badge{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#6D5EF6,#B84DF0);display:grid;place-items:center;font-weight:700;color:#fff}.privacy-page .back{font-size:14px;color:var(--muted);text-decoration:none}.privacy-page .back:hover{color:#fff}.privacy-page main{max-width:900px;margin:0 auto;padding:70px 24px 100px}.privacy-page .paper{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(28px,5vw,64px);box-shadow:0 30px 90px rgba(0,0,0,.25)}.privacy-page h1,.privacy-page h2,.privacy-page h3{font-family:var(--display);line-height:1.15;color:#fff}.privacy-page h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.03em;margin:0 0 18px}.privacy-page h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:52px 0 20px;padding-top:10px;border-top:1px solid var(--line)}.privacy-page h3{font-size:1.15rem;margin:32px 0 10px;color:#fff}.privacy-page .meta{color:var(--muted);padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035);margin:0 0 30px}.privacy-page .paper p{margin:0 0 18px;color:var(--muted)}.privacy-page .paper ul{margin:0 0 20px;padding-left:24px;color:var(--muted)}.privacy-page .paper li{margin:5px 0}.privacy-page .paper strong{color:#fff}.privacy-page .notice{font-size:13px;color:var(--dim);margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}.privacy-page footer{max-width:900px;margin:-45px auto 0;padding:0 24px 45px;color:var(--dim);font-size:13px}@media(max-width:600px){main{padding:35px 14px 70px}.privacy-page .paper{padding:24px 20px;border-radius:18px}.privacy-page .nav{padding:14px 16px}}
+.privacy-page .privacy-top{position:sticky;top:0;z-index:50;background:rgba(10,14,32,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.09)}
+.privacy-page .privacy-nav{max-width:1000px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.privacy-page .privacy-brand{display:flex;align-items:center;gap:10px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;color:#EEF0FA;text-decoration:none}
+.privacy-page .privacy-badge{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#6D5EF6,#B84DF0);display:grid;place-items:center;font-weight:700;color:#fff}
+.privacy-page .privacy-back{font-size:14px;color:#B3B9D5;text-decoration:none}.privacy-page .privacy-back:hover{color:#fff}
+.privacy-page .privacy-main{max-width:900px;margin:0 auto;padding:70px 24px 100px}
+.privacy-page .privacy-paper{background:#141A38;border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:clamp(28px,5vw,64px);box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.privacy-page .privacy-paper h1,.privacy-page .privacy-paper h2,.privacy-page .privacy-paper h3{font-family:'Clash Display',sans-serif;line-height:1.15;color:#fff}
+.privacy-page .privacy-paper h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.03em;margin:0 0 18px}.privacy-page .privacy-paper h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:52px 0 20px;padding-top:10px;border-top:1px solid rgba(255,255,255,.09)}.privacy-page .privacy-paper h3{font-size:1.15rem;margin:32px 0 10px;color:#fff}
+.privacy-page .privacy-paper p{margin:0 0 18px;color:#B3B9D5}.privacy-page .privacy-paper ul{margin:0 0 20px;padding-left:24px;color:#B3B9D5}.privacy-page .privacy-paper li{margin:5px 0}.privacy-page .privacy-paper strong{color:#fff}
+.privacy-page .privacy-paper .meta{color:#B3B9D5;padding:16px 18px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:rgba(255,255,255,.035);margin:0 0 30px}
+.privacy-page .privacy-paper .notice{font-size:13px;color:#7E86AE;margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.09)}
+.privacy-page .privacy-footer{max-width:900px;margin:-45px auto 0;padding:0 24px 45px;color:#7E86AE;font-size:13px}
+@media(max-width:600px){.privacy-page .privacy-main{padding:35px 14px 70px}.privacy-page .privacy-paper{padding:24px 20px;border-radius:18px}.privacy-page .privacy-nav{padding:14px 16px}}
 </style>
 </head>
 <body>
 <div class="bg"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
 <div id="root"></div>
+<div id="payxchange-privacy-content" style="display:none"><div class="paper">
+<h1>PAYXCHANGE PRIVACY POLICY</h1>
+<h2>CHAPTER 1: INTRODUCTION, SCOPE AND ACCEPTANCE</h2>
+<h3>1.1 Purpose</h3>
+<p>Welcome to PayXchange, a digital payment platform owned and operated by Shiifa Limited (&quot;Shiifa Limited&quot;, &quot;PayXchange&quot;, &quot;we&quot;, &quot;our&quot; or &quot;us&quot;).</p>
+<p>This Privacy Policy explains how Shiifa Limited collects, uses, stores, protects, shares and otherwise processes personal information when you access or use the PayXchange mobile application, website, application programming interfaces (APIs), customer support channels and any related products or services (collectively, the &quot;Platform&quot;).</p>
+<p>Your privacy is important to us. We are committed to handling your personal information responsibly, transparently and securely while complying with applicable Nigerian data protection laws and internationally recognized privacy principles.</p>
+<h3>1.2 Scope of this Privacy Policy</h3>
+<p>This Privacy Policy applies to all individuals and organizations who interact with PayXchange, including but not limited to:</p>
+<ul><li>Customers;</li></ul>
+<ul><li>Merchants;</li></ul>
+<ul><li>Prospective Users;</li></ul>
+<ul><li>API clients;</li></ul>
+<ul><li>Business partners;</li></ul>
+<ul><li>Representatives of Merchants;</li></ul>
+<ul><li>Visitors to our Platform;</li></ul>
+<ul><li>Individuals who communicate with our customer support services.</li></ul>
+<p>This Policy applies whenever personal information is collected through the Platform or in connection with the Services provided by PayXchange.</p>
+<h3>1.3 Relationship with the Terms and Conditions</h3>
+<p>This Privacy Policy forms an integral part of the PayXchange Terms and Conditions.</p>
+<p>By registering for, accessing or using PayXchange, you acknowledge that you have read and understood this Privacy Policy. Where you do not agree with the practices described in this Privacy Policy, you should discontinue use of the Platform.</p>
+<h3>1.4 Our Role</h3>
+<p>PayXchange is a payment facilitation platform that enables Customers to make secure digital payments to Merchants without manually entering traditional bank account details.</p>
+<p>To provide these Services, Shiifa Limited works with regulated financial institutions and licensed payment infrastructure partners.</p>
+<p>Depending on the circumstances, Shiifa Limited may process personal information:</p>
+<ul><li>As a data controller;</li></ul>
+<ul><li>As a data processor acting on behalf of a Licensed Partner;</li></ul>
+<ul><li>Or in another capacity recognized under applicable law.</li></ul>
+<h3>1.5 Our Privacy Commitment</h3>
+<p>Shiifa Limited is committed to ensuring that personal information is processed:</p>
+<ul><li>Lawfully;</li></ul>
+<ul><li>Fairly;</li></ul>
+<ul><li>Transparently;</li></ul>
+<ul><li>Securely;</li></ul>
+<ul><li>Only for legitimate purposes;</li></ul>
+<ul><li>Only to the extent necessary;</li></ul>
+<ul><li>In accordance with applicable legal obligations.</li></ul>
+<p>Privacy protection is integrated into the design, development and operation of the PayXchange Platform.</p>
+<h3>1.6 Applicable Laws</h3>
+<p>Shiifa Limited intends to operate the PayXchange Platform in accordance with applicable data protection and privacy laws, including, where applicable:</p>
+<ul><li>The Nigeria Data Protection Act, 2023 (NDPA);</li></ul>
+<ul><li>Regulations and guidance issued by the Nigeria Data Protection Commission (NDPC);</li></ul>
+<ul><li>Applicable regulations issued by the Central Bank of Nigeria (CBN);</li></ul>
+<ul><li>Anti-money laundering and financial crime legislation;</li></ul>
+<ul><li>Any other applicable privacy or financial services laws.</li></ul>
+<p>Where legal requirements change, Shiifa Limited may update this Privacy Policy accordingly.</p>
+<h3>1.7 Principles Governing Personal Information</h3>
+<p>When processing personal information, Shiifa Limited aims to follow principles including:</p>
+<ul><li>Lawfulness;</li></ul>
+<ul><li>Fairness;</li></ul>
+<ul><li>Transparency;</li></ul>
+<ul><li>Purpose limitation;</li></ul>
+<ul><li>Data minimization;</li></ul>
+<ul><li>Accuracy;</li></ul>
+<ul><li>Storage limitation;</li></ul>
+<ul><li>Integrity;</li></ul>
+<ul><li>Confidentiality;</li></ul>
+<ul><li>Accountability.</li></ul>
+<p>These principles guide the manner in which personal information is collected, used and protected throughout the lifecycle of the PayXchange Services.</p>
+<h3>1.8 Children</h3>
+<p>PayXchange is not intended for use by individuals who are legally incapable of entering into binding contracts under applicable Nigerian law.</p>
+<p>Shiifa Limited does not knowingly collect personal information directly from children except where expressly permitted or required by applicable law.</p>
+<p>Where Shiifa Limited becomes aware that personal information has been collected inappropriately from a child, reasonable steps may be taken to delete or otherwise handle such information in accordance with applicable law.</p>
+<h3>1.9 Changes to this Privacy Policy</h3>
+<p>Shiifa Limited may revise or update this Privacy Policy from time to time to reflect:</p>
+<ul><li>Changes in legal requirements;</li></ul>
+<ul><li>Regulatory guidance;</li></ul>
+<ul><li>Technological developments;</li></ul>
+<ul><li>New Platform features;</li></ul>
+<ul><li>Operational improvements;</li></ul>
+<ul><li>Changes to payment infrastructure;</li></ul>
+<ul><li>Changes involving Licensed Partners.</li></ul>
+<p>Where material changes are made, Users may be notified through appropriate communication channels, including:</p>
+<ul><li>In-app notifications;</li></ul>
+<ul><li>Email;</li></ul>
+<ul><li>The official website;</li></ul>
+<ul><li>Or other appropriate electronic means.</li></ul>
+<p>The revised Privacy Policy shall become effective on the date specified in the updated version.</p>
+<h3>1.10 Acceptance of this Privacy Policy</h3>
+<p>By creating an Account, accessing or using the PayXchange Platform, you acknowledge and agree that:</p>
+<ul><li>You have read this Privacy Policy in its entirety;</li></ul>
+<ul><li>You understand how Shiifa Limited processes your personal information;</li></ul>
+<p>c. You consent to the processing of your personal information where consent is the appropriate legal basis under applicable law;</p>
+<p>d. You understand that certain information must be processed to provide payment services, comply with legal obligations and protect the security of the Platform;</p>
+<p>e. You agree that your continued use of PayXchange following updates to this Privacy Policy constitutes acceptance of those updates, to the extent permitted by applicable law.</p>
+<h3>1.11 Contact Information</h3>
+<p>If you have questions regarding this Privacy Policy, you may contact Shiifa Limited using the official support channel below:</p>
+<p>Shiifa Limited PayXchange Email: schiiphatech@gmail.com</p>
+<h2>CHAPTER 2: DEFINITIONS AND INTERPRETATION</h2>
+<h3>2.1 Purpose</h3>
+<p>This Chapter defines the key terms used throughout this Privacy Policy.</p>
+<p>Unless the context otherwise requires, the following definitions shall apply whenever these terms are used in this Privacy Policy. Words importing the singular include the plural and vice versa, and references to one gender include all genders where the context permits.</p>
+<h3>2.2 Definitions</h3>
+<p>For the purposes of this Privacy Policy:</p>
+<p>&quot;Account&quot; Means a registered PayXchange user account created by a Customer, Merchant or other authorized User to access the Platform and its Services.</p>
+<p>&quot;Applicable Law&quot; Means all laws, regulations, regulatory guidelines, directives, codes of practice and judicial decisions applicable to the processing of Personal Information and the operation of the PayXchange Platform, including those of the Federal Republic of Nigeria.</p>
+<p>&quot;Authentication&quot; Means any process used to verify the identity of a User before granting access to an Account or authorizing a Transaction, including passwords, one-time passwords (OTPs), biometric verification, PINs or other approved security methods.</p>
+<p>&quot;Customer&quot; Means an individual or organization that uses PayXchange to make payments to Merchants through the Platform.</p>
+<p>&quot;Data Controller&quot; Means the natural or legal person who determines the purposes and means of processing Personal Information, as defined under applicable data protection laws. Where applicable, Shiifa Limited may act as a Data Controller.</p>
+<p>&quot;Data Processor&quot; Means a person or organization that processes Personal Information on behalf of a Data Controller. Depending on the nature of the Service provided, Shiifa Limited or a Licensed Partner may act as a Data Processor.</p>
+<p>&quot;Data Subject&quot; Means an identified or identifiable individual whose Personal Information is processed by Shiifa Limited.</p>
+<p>&quot;Device Information&quot; Means technical information collected from a User&#x27;s device, including but not limited to:</p>
+<ul><li>Device model;</li></ul>
+<ul><li>Operating system;</li></ul>
+<ul><li>Application version;</li></ul>
+<ul><li>IP address;</li></ul>
+<ul><li>Browser information;</li></ul>
+<ul><li>Device identifiers;</li></ul>
+<ul><li>Network information;</li></ul>
+<ul><li>Security identifiers;</li></ul>
+<ul><li>Diagnostic information.</li></ul>
+<p>&quot;Funding Source&quot; Means a bank account, Wallet, debit instrument, Virtual Account or any other approved payment source linked to a User&#x27;s PayXchange Account.</p>
+<p>&quot;KYC&quot; Means &quot;Know Your Customer&quot; procedures conducted for identity verification and regulatory compliance. For PayXchange, KYC requirements may include those implemented by Shiifa Limited and those required by its Licensed Partners.</p>
+<p>&quot;Licensed Partner&quot; Means any bank, payment service provider, financial institution, payment gateway, payment switch or other regulated entity that provides financial infrastructure enabling PayXchange to</p>
+<p>offer its Services. At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner. Shiifa Limited may appoint additional Licensed Partners from time to time.</p>
+<p>&quot;Merchant&quot; Means an individual, business or organization registered on PayXchange to receive digital payments from Customers.</p>
+<p>&quot;PayXchange&quot; Means the digital payment platform owned and operated by Shiifa Limited that enables Customers to make secure payments to Merchants without manually entering traditional bank account details.</p>
+<p>&quot;Personal Information&quot; or &quot;Personal Data&quot; Means any information relating to an identified or identifiable natural person. This may include, without limitation:</p>
+<ul><li>Name;</li></ul>
+<ul><li>Date of birth;</li></ul>
+<ul><li>Residential address;</li></ul>
+<ul><li>Email address;</li></ul>
+<ul><li>Telephone number;</li></ul>
+<ul><li>Bank Verification Number (BVN);</li></ul>
+<ul><li>National Identification Number (NIN), where applicable;</li></ul>
+<ul><li>Photographs;</li></ul>
+<ul><li>Identity documents;</li></ul>
+<ul><li>Payment information;</li></ul>
+<ul><li>Transaction history;</li></ul>
+<ul><li>Device information;</li></ul>
+<ul><li>Geolocation information;</li></ul>
+<ul><li>Biometric information where lawfully collected;</li></ul>
+<ul><li>Any other information capable of identifying an individual.</li></ul>
+<p>&quot;Platform&quot; Means the PayXchange mobile application, website, APIs, software systems, customer support channels and all related digital services operated by Shiifa Limited.</p>
+<p>&quot;Processing&quot; Means any operation performed on Personal Information, whether by automated or manual means, including:</p>
+<ul><li>Collection;</li></ul>
+<ul><li>Recording;</li></ul>
+<ul><li>Organization;</li></ul>
+<ul><li>Storage;</li></ul>
+<ul><li>Adaptation;</li></ul>
+<ul><li>Retrieval;</li></ul>
+<ul><li>Consultation;</li></ul>
+<ul><li>Use;</li></ul>
+<ul><li>Disclosure;</li></ul>
+<ul><li>Transmission;</li></ul>
+<ul><li>Sharing;</li></ul>
+<ul><li>Restriction;</li></ul>
+<ul><li>Deletion;</li></ul>
+<ul><li>Destruction.</li></ul>
+<p>&quot;Privacy Policy&quot; Means this PayXchange Privacy Policy, including any amendments made from time to time.</p>
+<p>&quot;Services&quot; Means all payment-related and technology services made available through the PayXchange Platform, including:</p>
+<ul><li>Customer registration;</li></ul>
+<ul><li>Merchant onboarding;</li></ul>
+<ul><li>Identity verification;</li></ul>
+<ul><li>Wallet services;</li></ul>
+<ul><li>Virtual Account services;</li></ul>
+<ul><li>Merchant payments;</li></ul>
+<ul><li>QR and NQR payments;</li></ul>
+<ul><li>Direct Debit services;</li></ul>
+<ul><li>Payment processing;</li></ul>
+<ul><li>API integrations;</li></ul>
+<ul><li>Transaction management;</li></ul>
+<ul><li>Customer support;</li></ul>
+<ul><li>Fraud prevention;</li></ul>
+<ul><li>And any additional services introduced by Shiifa Limited.</li></ul>
+<p>&quot;Shiifa Limited&quot; Means Shiifa Limited, a company incorporated in the Federal Republic of Nigeria under RC Number 9655738, being the owner and operator of PayXchange.</p>
+<p>&quot;Transaction&quot; Means any payment, debit, credit, refund, reversal, settlement or other financial activity processed through the PayXchange Platform.</p>
+<p>&quot;User&quot; Means any individual or organization accessing or using the PayXchange Platform, including Customers, Merchants, prospective Users and authorized representatives.</p>
+<p>&quot;Virtual Account&quot; Means a unique account number assigned through a Licensed Partner for the purpose of facilitating payments on the PayXchange Platform. A Virtual Account does not necessarily constitute a traditional bank account.</p>
+<p>&quot;Wallet&quot; Means a payment facility made available through PayXchange or its Licensed Partners that enables eligible Users to hold, receive or transfer value in accordance with applicable laws and regulatory requirements.</p>
+<h3>2.3 Interpretation</h3>
+<p>Unless the context otherwise requires:</p>
+<ul><li>References to one gender include all genders;</li></ul>
+<ul><li>Words in the singular include the plural and vice versa;</li></ul>
+<ul><li>References to statutes include amendments, replacements and subsidiary legislation;</li></ul>
+<ul><li>Headings are included for convenience only and do not affect interpretation;</li></ul>
+<ul><li>References to &quot;including&quot; shall be interpreted as &quot;including without limitation&quot;;</li></ul>
+<ul><li>References to &quot;applicable law&quot; include future amendments to such laws.</li></ul>
+<h3>2.4 Consistency with the Terms and Conditions</h3>
+<p>Unless expressly stated otherwise, definitions used in this Privacy Policy shall have the same meanings as those contained in the PayXchange Terms and Conditions.</p>
+<p>Where any inconsistency exists solely in relation to the processing of Personal Information, this Privacy Policy shall prevail to the extent of that inconsistency.</p>
+<h3>2.5 Future Services</h3>
+<p>Where Shiifa Limited introduces new Services, technologies or payment functionalities that involve the processing of Personal Information, references in this Privacy Policy shall be interpreted to include those Services unless otherwise stated.</p>
+<p>Additional definitions may be introduced through future updates to this Privacy Policy.</p>
+<h3>2.6 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<ul><li>The definitions contained in this Chapter govern the interpretation of this Privacy Policy;</li></ul>
+<p>b. Capitalized terms shall have the meanings assigned to them unless the context requires otherwise;</p>
+<ul><li>This Privacy Policy should be read together with the PayXchange Terms and Conditions;</li></ul>
+<p>d. The interpretation of this Privacy Policy shall promote transparency, lawful processing and the protection of Personal Information.</p>
+<h2>CHAPTER 3: PERSONAL INFORMATION WE COLLECT</h2>
+<h3>3.1 Purpose</h3>
+<p>This Chapter explains the categories of Personal Information that Shiifa Limited may collect in connection with the operation of the PayXchange Platform.</p>
+<p>Shiifa Limited collects only the information that is reasonably necessary to provide secure, reliable and legally compliant payment services, prevent fraud, comply with regulatory obligations and improve the quality of the Platform.</p>
+<p>The categories of information collected may vary depending on the Services used, the User&#x27;s level of verification and applicable legal or regulatory requirements.</p>
+<h3>3.2 Information You Provide Directly</h3>
+<p>Shiifa Limited may collect Personal Information that you voluntarily provide when you:</p>
+<ul><li>Create a PayXchange Account;</li></ul>
+<ul><li>Complete identity verification (KYC);</li></ul>
+<ul><li>Link a Funding Source;</li></ul>
+<ul><li>Register as a Merchant;</li></ul>
+<ul><li>Contact Customer Support;</li></ul>
+<ul><li>Submit complaints;</li></ul>
+<ul><li>Participate in surveys or promotions;</li></ul>
+<ul><li>Communicate with us through official channels;</li></ul>
+<ul><li>Use additional services introduced on the Platform.</li></ul>
+<h3>3.3 Identity Information</h3>
+<p>Depending on the Services you use and the verification level required, we may collect identity information including:</p>
+<ul><li>Full name;</li></ul>
+<ul><li>Date of birth;</li></ul>
+<ul><li>Gender (where applicable);</li></ul>
+<ul><li>Nationality;</li></ul>
+<ul><li>Residential address;</li></ul>
+<ul><li>Passport photograph or selfie;</li></ul>
+<ul><li>Government-issued identification details;</li></ul>
+<ul><li>National Identification Number (NIN), where applicable;</li></ul>
+<ul><li>Bank Verification Number (BVN);</li></ul>
+<ul><li>Tax Identification Number (TIN), where applicable;</li></ul>
+<ul><li>Signature, where required;</li></ul>
+<ul><li>Any additional identity information required under applicable law or by our Licensed Partners.</li></ul>
+<h3>3.4 Contact Information</h3>
+<p>We may collect contact information including:</p>
+<ul><li>Email address;</li></ul>
+<ul><li>Mobile telephone number;</li></ul>
+<ul><li>Residential address;</li></ul>
+<ul><li>Mailing address;</li></ul>
+<ul><li>Emergency contact information, where applicable;</li></ul>
+<ul><li>Preferred communication language.</li></ul>
+<p>This information enables Shiifa Limited to communicate with Users regarding Accounts, Transactions, security notifications and customer support.</p>
+<h3>3.5 Financial Information</h3>
+<p>To facilitate payment services, we may collect financial information including:</p>
+<ul><li>Linked bank account details;</li></ul>
+<ul><li>Virtual Account details;</li></ul>
+<ul><li>Wallet information;</li></ul>
+<ul><li>Account verification information;</li></ul>
+<ul><li>Payment authorization information;</li></ul>
+<ul><li>Funding source information;</li></ul>
+<ul><li>Transaction limits;</li></ul>
+<ul><li>Settlement account details for Merchants;</li></ul>
+<ul><li>Account ownership verification records.</li></ul>
+<p>Important: PayXchange is designed to facilitate payments without requiring Customers to manually enter a Merchant&#x27;s bank account details at the point of payment. However, certain financial information is still required behind the scenes to securely authorize and complete Transactions through our Licensed Partners.</p>
+<h3>3.6 Transaction Information</h3>
+<p>Shiifa Limited may collect information relating to Transactions conducted through the Platform, including:</p>
+<ul><li>Transaction reference numbers;</li></ul>
+<ul><li>Transaction amount;</li></ul>
+<ul><li>Transaction date and time;</li></ul>
+<ul><li>Payment status;</li></ul>
+<ul><li>Payment method;</li></ul>
+<ul><li>Merchant identifier;</li></ul>
+<ul><li>Customer identifier;</li></ul>
+<ul><li>Settlement status;</li></ul>
+<ul><li>QR or NQR payment information;</li></ul>
+<ul><li>Direct Debit authorization records;</li></ul>
+<ul><li>Reversal information;</li></ul>
+<ul><li>Refund information;</li></ul>
+<ul><li>Transaction history;</li></ul>
+<ul><li>Dispute records.</li></ul>
+<p>Transaction records are essential for payment processing, fraud prevention, reconciliation, customer support and regulatory compliance.</p>
+<h3>3.7 KYC and Verification Information</h3>
+<p>To comply with applicable laws and regulatory obligations, Shiifa Limited and its Licensed Partners may collect:</p>
+<ul><li>Identity verification documents;</li></ul>
+<ul><li>Biometric verification results, where lawfully permitted;</li></ul>
+<ul><li>Facial verification results;</li></ul>
+<ul><li>Liveness detection results;</li></ul>
+<ul><li>Address verification records;</li></ul>
+<ul><li>Sanctions screening results;</li></ul>
+<ul><li>Politically exposed person (PEP) screening results;</li></ul>
+<ul><li>Anti-money laundering (AML) screening results;</li></ul>
+<ul><li>Watchlist screening results;</li></ul>
+<ul><li>Other information reasonably required to satisfy KYC obligations.</li></ul>
+<p>The extent of information collected depends on the applicable KYC tier and regulatory requirements.</p>
+<h3>3.8 Merchant Information</h3>
+<p>Where you register as a Merchant, Shiifa Limited may collect additional business information including:</p>
+<ul><li>Registered business name;</li></ul>
+<ul><li>RC number or business registration details;</li></ul>
+<ul><li>Trading name;</li></ul>
+<ul><li>Business address;</li></ul>
+<ul><li>Settlement account information;</li></ul>
+<ul><li>Business contact information;</li></ul>
+<ul><li>Nature of business;</li></ul>
+<ul><li>Tax information, where applicable;</li></ul>
+<ul><li>Ownership information;</li></ul>
+<ul><li>Authorized representative information;</li></ul>
+<ul><li>Merchant onboarding documentation.</li></ul>
+<h3>3.9 Device and Technical Information</h3>
+<p>When you access the PayXchange Platform, certain technical information may be collected automatically, including:</p>
+<ul><li>Device model;</li></ul>
+<ul><li>Operating system;</li></ul>
+<ul><li>Device identifiers;</li></ul>
+<ul><li>IP address;</li></ul>
+<ul><li>Application version;</li></ul>
+<ul><li>Browser type (where applicable);</li></ul>
+<ul><li>Mobile network information;</li></ul>
+<ul><li>Language settings;</li></ul>
+<ul><li>Time zone;</li></ul>
+<ul><li>Diagnostic information;</li></ul>
+<ul><li>Crash reports;</li></ul>
+<ul><li>Device security status.</li></ul>
+<p>This information helps us maintain Platform security, improve performance and investigate technical issues.</p>
+<h3>3.10 Usage Information</h3>
+<p>Shiifa Limited may collect information regarding how Users interact with the Platform, including:</p>
+<ul><li>Login history;</li></ul>
+<ul><li>Session duration;</li></ul>
+<ul><li>Features accessed;</li></ul>
+<ul><li>Pages viewed;</li></ul>
+<ul><li>Navigation patterns;</li></ul>
+<ul><li>Payment frequency;</li></ul>
+<ul><li>Merchant interactions;</li></ul>
+<ul><li>QR/NQR payment activity;</li></ul>
+<ul><li>Wallet usage;</li></ul>
+<ul><li>Virtual Account activity.</li></ul>
+<p>Usage information assists us in improving the functionality, reliability and usability of PayXchange.</p>
+<h3>3.11 Location Information</h3>
+<p>Subject to your device settings and applicable law, we may collect location-related information including:</p>
+<ul><li>Approximate location derived from IP address;</li></ul>
+<ul><li>Device location information where permission has been granted;</li></ul>
+<ul><li>Transaction location data;</li></ul>
+<ul><li>Security-related location information.</li></ul>
+<p>Location information may be used to:</p>
+<ul><li>Prevent fraud;</li></ul>
+<ul><li>Detect unusual account activity;</li></ul>
+<ul><li>Comply with legal obligations;</li></ul>
+<ul><li>Improve security controls.</li></ul>
+<h3>3.12 Communications</h3>
+<p>Where you communicate with Shiifa Limited, we may retain records of:</p>
+<ul><li>Emails;</li></ul>
+<ul><li>Customer support chats;</li></ul>
+<ul><li>Telephone calls, where recorded;</li></ul>
+<ul><li>Complaint submissions;</li></ul>
+<ul><li>Feedback;</li></ul>
+<ul><li>Survey responses;</li></ul>
+<ul><li>Correspondence relating to Transactions or Accounts.</li></ul>
+<p>Such communications assist in quality assurance, dispute resolution and customer support.</p>
+<h3>3.13 Security Information</h3>
+<p>For security purposes, Shiifa Limited may collect:</p>
+<ul><li>Login timestamps;</li></ul>
+<ul><li>Authentication logs;</li></ul>
+<ul><li>Device recognition information;</li></ul>
+<ul><li>Failed login attempts;</li></ul>
+<ul><li>Password reset requests;</li></ul>
+<ul><li>OTP verification records;</li></ul>
+<ul><li>Biometric authentication records, where applicable;</li></ul>
+<ul><li>Security event logs;</li></ul>
+<ul><li>Fraud monitoring records.</li></ul>
+<h3>3.14 Information from Licensed Partners and Third Parties</h3>
+<p>Shiifa Limited may receive Personal Information from Licensed Partners and authorized third parties, including:</p>
+<ul><li>Payment processors;</li></ul>
+<ul><li>Banks;</li></ul>
+<ul><li>Identity verification providers;</li></ul>
+<ul><li>Fraud prevention service providers;</li></ul>
+<ul><li>Regulatory databases;</li></ul>
+<ul><li>Sanctions screening providers;</li></ul>
+<ul><li>Payment switches;</li></ul>
+<ul><li>Credit reference agencies, where applicable.</li></ul>
+<p>Such information is collected only where legally permitted and necessary for the provision of the Services.</p>
+<h3>3.15 Information We Do Not Intentionally Collect</h3>
+<p>Shiifa Limited does not intentionally collect Personal Information that is unnecessary for providing the Services.</p>
+<p>We also do not intentionally collect:</p>
+<ul><li>Unrelated personal communications;</li></ul>
+<ul><li>Information unrelated to Platform operations;</li></ul>
+<ul><li>Excessive personal information beyond legitimate business or legal requirements.</li></ul>
+<p>Users are encouraged not to submit unnecessary Personal Information through the Platform or Customer Support channels.</p>
+<h3>3.16 Accuracy of Information</h3>
+<p>Users are responsible for ensuring that the Personal Information they provide is:</p>
+<ul><li>Accurate;</li></ul>
+<ul><li>Complete;</li></ul>
+<ul><li>Current; and</li></ul>
+<ul><li>Not misleading.</li></ul>
+<p>Failure to provide accurate information may affect the availability of certain Services, delay Transactions or result in Account restrictions in accordance with the PayXchange Terms and Conditions.</p>
+<h3>3.17 Future Categories of Information</h3>
+<p>As PayXchange introduces new products, payment technologies and regulatory features, Shiifa Limited may collect additional categories of Personal Information where reasonably necessary and permitted by applicable law.</p>
+<p>Where required, Users will be informed through updates to this Privacy Policy or other appropriate notices.</p>
+<h3>3.18 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited collects Personal Information necessary to provide secure payment facilitation services;</p>
+<p>b. The categories of information collected may vary depending on the Services you use and your verification level;</p>
+<p>c. Certain information is required to comply with applicable laws, regulatory obligations and Licensed Partner requirements;</p>
+<ul><li>You are responsible for ensuring that the information you provide is accurate and up to date;</li></ul>
+<p>e. Shiifa Limited will process Personal Information in accordance with this Privacy Policy and applicable law.</p>
+<h2>CHAPTER 4: HOW WE COLLECT PERSONAL INFORMATION</h2>
+<h3>4.1 Purpose</h3>
+<p>This Chapter explains the various ways in which Shiifa Limited collects Personal Information in connection with the operation of the PayXchange Platform.</p>
+<p>Personal Information may be collected directly from Users, automatically through the Platform, from Licensed Partners, or from other lawful and authorized sources where necessary to provide the Services, comply with applicable laws, prevent fraud and protect the integrity of the Platform.</p>
+<p>Shiifa Limited is committed to collecting Personal Information in a lawful, fair and transparent manner.</p>
+<h3>4.2 Information Collected Directly from You</h3>
+<p>Shiifa Limited collects Personal Information that you voluntarily provide when you:</p>
+<ul><li>Create a PayXchange Account;</li></ul>
+<ul><li>Complete Know Your Customer (KYC) verification;</li></ul>
+<ul><li>Register as a Merchant;</li></ul>
+<ul><li>Link a Funding Source;</li></ul>
+<ul><li>Authorize Direct Debit;</li></ul>
+<ul><li>Make or receive payments;</li></ul>
+<ul><li>Contact Customer Support;</li></ul>
+<ul><li>Submit complaints or enquiries;</li></ul>
+<ul><li>Respond to surveys;</li></ul>
+<ul><li>Communicate with Shiifa Limited through official channels;</li></ul>
+<ul><li>Update your Account information.</li></ul>
+<p>You are responsible for ensuring that all information provided is accurate, complete and up to date.</p>
+<h3>4.3 Information Collected During Account Registration</h3>
+<p>When you register for PayXchange, Shiifa Limited may collect information necessary to establish and administer your Account, including:</p>
+<ul><li>Identification information;</li></ul>
+<ul><li>Contact information;</li></ul>
+<ul><li>Authentication credentials;</li></ul>
+<ul><li>KYC information;</li></ul>
+<ul><li>Account preferences;</li></ul>
+<ul><li>Communication preferences;</li></ul>
+<ul><li>Security questions, where applicable.</li></ul>
+<p>Certain information may be mandatory before an Account can be activated.</p>
+<h3>4.4 Information Collected During Transactions</h3>
+<p>Whenever you use PayXchange to facilitate a payment, Shiifa Limited may automatically collect information relating to that Transaction, including:</p>
+<ul><li>Payment amount;</li></ul>
+<ul><li>Transaction reference;</li></ul>
+<ul><li>Merchant identifier;</li></ul>
+<ul><li>Customer identifier;</li></ul>
+<ul><li>Payment authorization records;</li></ul>
+<ul><li>QR or NQR payment information;</li></ul>
+<ul><li>Direct Debit authorization details;</li></ul>
+<ul><li>Wallet activity;</li></ul>
+<ul><li>Virtual Account activity;</li></ul>
+<ul><li>Settlement records;</li></ul>
+<ul><li>Timestamps;</li></ul>
+<ul><li>Transaction status.</li></ul>
+<p>This information enables Shiifa Limited and its Licensed Partners to process, reconcile and secure Transactions.</p>
+<h3>4.5 Information Collected Automatically</h3>
+<p>When you access or use the Platform, certain information may be collected automatically through the operation of our systems.</p>
+<p>Such information may include:</p>
+<ul><li>IP address;</li></ul>
+<ul><li>Device identifiers;</li></ul>
+<ul><li>Operating system;</li></ul>
+<ul><li>Application version;</li></ul>
+<ul><li>Browser information (where applicable);</li></ul>
+<ul><li>Device language;</li></ul>
+<ul><li>Mobile network information;</li></ul>
+<ul><li>Diagnostic logs;</li></ul>
+<ul><li>Security logs;</li></ul>
+<ul><li>Crash reports;</li></ul>
+<ul><li>Login history;</li></ul>
+<ul><li>Authentication records;</li></ul>
+<ul><li>Session information.</li></ul>
+<p>Automatic collection assists in maintaining Platform performance, detecting fraud and improving user experience.</p>
+<h3>4.6 Information from Your Device</h3>
+<p>Subject to your device settings and permissions, PayXchange may collect information from your device, including:</p>
+<ul><li>Device model;</li></ul>
+<ul><li>Operating system version;</li></ul>
+<ul><li>Unique device identifiers;</li></ul>
+<ul><li>Approximate location information;</li></ul>
+<ul><li>Security status;</li></ul>
+<ul><li>Installed application version;</li></ul>
+<ul><li>Network connectivity information.</li></ul>
+<p>Shiifa Limited does not collect information from your device beyond what is reasonably necessary for the Services or permitted by applicable law.</p>
+<h3>4.7 Information from Licensed Partners</h3>
+<p>Because PayXchange operates through regulated financial infrastructure, Shiifa Limited may receive Personal Information from Licensed Partners involved in providing payment services.</p>
+<p>This may include information relating to:</p>
+<ul><li>Account verification;</li></ul>
+<ul><li>Identity verification;</li></ul>
+<ul><li>Payment authorization;</li></ul>
+<ul><li>Direct Debit processing;</li></ul>
+<ul><li>Wallet services;</li></ul>
+<ul><li>Virtual Account services;</li></ul>
+<ul><li>Transaction settlement;</li></ul>
+<ul><li>Fraud monitoring;</li></ul>
+<ul><li>Regulatory compliance.</li></ul>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner. Shiifa Limited may engage additional Licensed Partners in the future.</p>
+<h3>4.8 Information from Banks and Financial Institutions</h3>
+<p>Where necessary to facilitate payment services, Shiifa Limited may receive information from banks or other regulated financial institutions regarding:</p>
+<ul><li>Account ownership verification;</li></ul>
+<ul><li>Payment confirmations;</li></ul>
+<ul><li>Settlement status;</li></ul>
+<ul><li>Account validation;</li></ul>
+<ul><li>Transaction references;</li></ul>
+<ul><li>Direct Debit mandates;</li></ul>
+<ul><li>Payment failures;</li></ul>
+<ul><li>Reversal information.</li></ul>
+<p>Such information is processed only for legitimate operational and regulatory purposes.</p>
+<h3>4.9 Information from Identity Verification Providers</h3>
+<p>To comply with applicable laws and KYC obligations, Shiifa Limited or its Licensed Partners may obtain verification information from authorized identity verification providers.</p>
+<p>Such information may include:</p>
+<ul><li>Identity confirmation;</li></ul>
+<ul><li>Document validation;</li></ul>
+<ul><li>Facial verification;</li></ul>
+<ul><li>Liveness detection;</li></ul>
+<ul><li>Sanctions screening;</li></ul>
+<ul><li>Politically exposed person (PEP) screening;</li></ul>
+<ul><li>Anti-money laundering (AML) screening;</li></ul>
+<ul><li>Address verification.</li></ul>
+<p>Only information reasonably necessary for identity verification shall be collected.</p>
+<h3>4.10 Information from Merchants</h3>
+<p>Where you interact with a Merchant through PayXchange, Shiifa Limited may receive information relating to:</p>
+<ul><li>Merchant payment requests;</li></ul>
+<ul><li>Transaction descriptions;</li></ul>
+<ul><li>Payment references;</li></ul>
+<ul><li>Order identifiers;</li></ul>
+<ul><li>Merchant account information;</li></ul>
+<ul><li>Settlement instructions.</li></ul>
+<p>PayXchange receives only the information necessary to facilitate the payment transaction and related support services.</p>
+<h3>4.11 Information from Customer Support</h3>
+<p>Where you contact Customer Support, Shiifa Limited may collect information contained in:</p>
+<ul><li>Emails;</li></ul>
+<ul><li>Support tickets;</li></ul>
+<ul><li>Live chat communications;</li></ul>
+<ul><li>Telephone conversations, where lawfully recorded;</li></ul>
+<ul><li>Complaint submissions;</li></ul>
+<ul><li>Supporting documentation;</li></ul>
+<ul><li>Follow-up correspondence.</li></ul>
+<p>This information assists in resolving issues, improving service quality and maintaining accurate records.</p>
+<h3>4.12 Information from Regulatory and Public Sources</h3>
+<p>Where permitted or required by applicable law, Shiifa Limited may obtain information from:</p>
+<ul><li>Government agencies;</li></ul>
+<ul><li>Regulatory authorities;</li></ul>
+<ul><li>Publicly available registers;</li></ul>
+<ul><li>Sanctions databases;</li></ul>
+<ul><li>Law enforcement agencies;</li></ul>
+<ul><li>Court records;</li></ul>
+<ul><li>Publicly available business records.</li></ul>
+<p>Such information is collected only where relevant to legal compliance, fraud prevention or identity verification.</p>
+<h3>4.13 Fraud Prevention and Security Monitoring</h3>
+<p>Shiifa Limited continuously monitors Platform activity to identify:</p>
+<ul><li>Suspicious login attempts;</li></ul>
+<ul><li>Unusual transaction patterns;</li></ul>
+<ul><li>Potential account compromise;</li></ul>
+<ul><li>Unauthorized access;</li></ul>
+<ul><li>Identity theft;</li></ul>
+<ul><li>Payment fraud;</li></ul>
+<ul><li>Cyber threats.</li></ul>
+<p>Information generated through such monitoring forms part of our security and fraud prevention programme.</p>
+<h3>4.14 Information Generated Through Use of the Platform</h3>
+<p>As you continue using PayXchange, additional information may be generated, including:</p>
+<ul><li>Payment history;</li></ul>
+<ul><li>Transaction frequency;</li></ul>
+<ul><li>Service preferences;</li></ul>
+<ul><li>Account activity;</li></ul>
+<ul><li>Dispute history;</li></ul>
+<ul><li>Customer support interactions;</li></ul>
+<ul><li>Merchant relationships;</li></ul>
+<ul><li>Payment behaviour.</li></ul>
+<p>This information assists Shiifa Limited in improving Platform functionality, enhancing security and complying with regulatory obligations.</p>
+<h3>4.15 No Secret Collection</h3>
+<p>Shiifa Limited does not intentionally collect Personal Information through deceptive, unlawful or covert means.</p>
+<p>Where Personal Information is collected automatically, such collection occurs only through technologies reasonably necessary for the operation, security and improvement of the Platform or as otherwise permitted by applicable law.</p>
+<h3>4.16 Third-Party Information</h3>
+<p>Where you provide Personal Information relating to another individual—for example, an authorized representative of a Merchant—you represent that you have the legal authority to provide such information and that the individual has been informed, where required, about its intended use.</p>
+<p>Shiifa Limited may process such information in accordance with this Privacy Policy and applicable law.</p>
+<h3>4.17 Future Collection Methods</h3>
+<p>As PayXchange introduces new technologies, features or Services, Shiifa Limited may adopt additional lawful methods of collecting Personal Information.</p>
+<p>Where such changes materially affect the processing of Personal Information, this Privacy Policy will be updated and Users will be notified where required by applicable law.</p>
+<h3>4.18 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited may collect Personal Information directly from you, automatically through the Platform and from authorized third parties;</p>
+<p>b. Information may also be received from Licensed Partners, banks, identity verification providers and regulators where necessary to provide the Services or comply with applicable law;</p>
+<p>c. Personal Information is collected only for legitimate business, operational, security and regulatory purposes;</p>
+<ul><li>You are responsible for ensuring that information you provide is accurate and lawfully supplied;</li></ul>
+<p>e. Shiifa Limited collects Personal Information in accordance with this Privacy Policy and applicable data protection laws.</p>
+<h2>CHAPTER 5: HOW WE USE YOUR PERSONAL INFORMATION</h2>
+<h3>5.1 Purpose</h3>
+<p>This Chapter explains the purposes for which Shiifa Limited processes Personal Information collected through the PayXchange Platform.</p>
+<p>Shiifa Limited processes Personal Information only where there is a legitimate business, operational, contractual or legal reason to do so and in accordance with applicable data protection laws.</p>
+<p>The information processed is limited to what is reasonably necessary to provide secure, efficient and compliant payment facilitation services.</p>
+<h3>5.2 Provision of Services</h3>
+<p>Shiifa Limited uses Personal Information to provide and manage the PayXchange Platform, including to:</p>
+<ul><li>Create and manage User Accounts;</li></ul>
+<ul><li>Authenticate Users;</li></ul>
+<ul><li>Facilitate secure digital payments;</li></ul>
+<ul><li>Process Customer-to-Merchant Transactions;</li></ul>
+<ul><li>Manage Wallet and Virtual Account services;</li></ul>
+<ul><li>Process Direct Debit instructions;</li></ul>
+<ul><li>Enable QR and NQR payments;</li></ul>
+<ul><li>Support API-based payment services through Licensed Partners;</li></ul>
+<ul><li>Provide customer support.</li></ul>
+<p>Personal Information is processed only to the extent necessary to perform these functions.</p>
+<h3>5.3 Identity Verification (KYC)</h3>
+<p>Personal Information is processed to:</p>
+<ul><li>Verify User identities;</li></ul>
+<ul><li>Comply with Know Your Customer (KYC) requirements;</li></ul>
+<ul><li>Prevent identity theft;</li></ul>
+<ul><li>Verify Merchant onboarding;</li></ul>
+<ul><li>Validate account ownership;</li></ul>
+<ul><li>Comply with Licensed Partner verification requirements.</li></ul>
+<p>The level of verification performed depends on the applicable KYC tier and regulatory obligations.</p>
+<h3>5.4 Payment Processing</h3>
+<p>Shiifa Limited processes Personal Information to facilitate payment Transactions between Customers and Merchants.</p>
+<p>This includes processing information necessary to:</p>
+<ul><li>Authenticate payment requests;</li></ul>
+<ul><li>Authorize Transactions;</li></ul>
+<ul><li>Communicate with Licensed Partners;</li></ul>
+<ul><li>Route payment instructions;</li></ul>
+<ul><li>Complete settlements;</li></ul>
+<ul><li>Generate transaction references;</li></ul>
+<ul><li>Confirm payment completion;</li></ul>
+<ul><li>Process refunds and reversals where applicable.</li></ul>
+<p>PayXchange&#x27;s primary function is to facilitate secure digital payments between Customers and Merchants without requiring Customers to manually enter a Merchant&#x27;s bank account details during the payment process.</p>
+<h3>5.5 Fraud Prevention and Security</h3>
+<p>Protecting Users and the Platform is one of Shiifa Limited&#x27;s primary objectives.</p>
+<p>Personal Information may be processed to:</p>
+<ul><li>Detect suspicious activities;</li></ul>
+<ul><li>Identify unauthorized access;</li></ul>
+<ul><li>Prevent payment fraud;</li></ul>
+<ul><li>Detect identity theft;</li></ul>
+<ul><li>Monitor unusual transaction patterns;</li></ul>
+<ul><li>Prevent account takeover;</li></ul>
+<ul><li>Investigate security incidents;</li></ul>
+<ul><li>Manage cybersecurity risks;</li></ul>
+<ul><li>Prevent abuse of Platform services.</li></ul>
+<p>Automated monitoring tools may be used to identify activities that present elevated security risks.</p>
+<h3>5.6 Regulatory Compliance</h3>
+<p>Shiifa Limited processes Personal Information to comply with legal and regulatory obligations, including obligations relating to:</p>
+<ul><li>Anti-money laundering (AML);</li></ul>
+<ul><li>Counter-terrorism financing (CTF);</li></ul>
+<ul><li>Know Your Customer (KYC);</li></ul>
+<ul><li>Sanctions screening;</li></ul>
+<ul><li>Fraud reporting;</li></ul>
+<ul><li>Financial crime prevention;</li></ul>
+<ul><li>Regulatory reporting;</li></ul>
+<ul><li>Court orders;</li></ul>
+<ul><li>Lawful requests from competent authorities.</li></ul>
+<p>Compliance with applicable law is essential to the operation of the PayXchange Platform.</p>
+<h3>5.7 Customer Support</h3>
+<p>Personal Information is used to:</p>
+<ul><li>Respond to enquiries;</li></ul>
+<ul><li>Investigate complaints;</li></ul>
+<ul><li>Resolve transaction issues;</li></ul>
+<ul><li>Provide technical assistance;</li></ul>
+<ul><li>Verify User identity before providing support;</li></ul>
+<ul><li>Improve service quality.</li></ul>
+<p>Support records may also be used for quality assurance and training purposes.</p>
+<h3>5.8 Communications</h3>
+<p>Shiifa Limited may use Personal Information to communicate with Users regarding:</p>
+<ul><li>Account activities;</li></ul>
+<ul><li>Transaction confirmations;</li></ul>
+<ul><li>Payment notifications;</li></ul>
+<ul><li>Security alerts;</li></ul>
+<ul><li>OTP verification;</li></ul>
+<ul><li>Direct Debit notifications;</li></ul>
+<ul><li>Platform updates;</li></ul>
+<ul><li>Policy changes;</li></ul>
+<ul><li>Service announcements;</li></ul>
+<ul><li>Regulatory notices.</li></ul>
+<p>Marketing communications will only be sent where permitted by applicable law and, where required, with the User&#x27;s consent.</p>
+<p>Users may opt out of promotional communications while continuing to receive essential service- related notifications.</p>
+<h3>5.9 Platform Improvement</h3>
+<p>Shiifa Limited continually seeks to improve the PayXchange Platform.</p>
+<p>Personal Information may be analyzed to:</p>
+<ul><li>Improve Platform functionality;</li></ul>
+<ul><li>Enhance payment speed;</li></ul>
+<ul><li>Improve user experience;</li></ul>
+<ul><li>Identify operational issues;</li></ul>
+<ul><li>Develop new products;</li></ul>
+<ul><li>Improve accessibility;</li></ul>
+<ul><li>Optimize system performance;</li></ul>
+<ul><li>Improve customer satisfaction.</li></ul>
+<p>Where practicable, aggregated or anonymized information may be used for these purposes.</p>
+<h3>5.10 Risk Management</h3>
+<p>Personal Information may be processed to:</p>
+<ul><li>Assess operational risks;</li></ul>
+<ul><li>Detect abnormal transaction behaviour;</li></ul>
+<ul><li>Evaluate fraud indicators;</li></ul>
+<ul><li>Manage payment risks;</li></ul>
+<ul><li>Reduce financial losses;</li></ul>
+<ul><li>Maintain Platform stability.</li></ul>
+<p>Such processing helps protect Customers, Merchants, Licensed Partners and Shiifa Limited.</p>
+<h3>5.11 Merchant Administration</h3>
+<p>Where applicable, Personal Information may be processed to:</p>
+<ul><li>Onboard Merchants;</li></ul>
+<ul><li>Verify business information;</li></ul>
+<ul><li>Manage settlement accounts;</li></ul>
+<ul><li>Monitor Merchant compliance;</li></ul>
+<ul><li>Process Merchant payments;</li></ul>
+<ul><li>Investigate Merchant disputes;</li></ul>
+<ul><li>Administer Merchant services.</li></ul>
+<h3>5.12 Record Keeping</h3>
+<p>Shiifa Limited maintains records necessary to:</p>
+<ul><li>Comply with legal obligations;</li></ul>
+<ul><li>Maintain transaction histories;</li></ul>
+<ul><li>Support audits;</li></ul>
+<ul><li>Resolve disputes;</li></ul>
+<ul><li>Investigate fraud;</li></ul>
+<ul><li>Demonstrate regulatory compliance;</li></ul>
+<ul><li>Improve internal governance.</li></ul>
+<p>Records are retained only for as long as necessary or as required by applicable law.</p>
+<h3>5.13 Analytics and Performance Monitoring</h3>
+<p>Personal Information may be processed to understand how Users interact with the Platform.</p>
+<p>This may include analysis relating to:</p>
+<ul><li>Feature usage;</li></ul>
+<ul><li>Payment trends;</li></ul>
+<ul><li>Transaction success rates;</li></ul>
+<ul><li>Application performance;</li></ul>
+<ul><li>Technical errors;</li></ul>
+<ul><li>Service availability.</li></ul>
+<p>Analytics help Shiifa Limited improve the reliability and effectiveness of PayXchange.</p>
+<h3>5.14 Business Continuity and System Protection</h3>
+<p>Personal Information may be processed to:</p>
+<ul><li>Maintain backups;</li></ul>
+<ul><li>Recover systems after incidents;</li></ul>
+<ul><li>Prevent data loss;</li></ul>
+<ul><li>Ensure service continuity;</li></ul>
+<ul><li>Monitor system integrity;</li></ul>
+<ul><li>Support disaster recovery planning.</li></ul>
+<p>These activities help ensure the continued availability and resilience of the Platform.</p>
+<h3>5.15 Research and Innovation</h3>
+<p>Where appropriate and permitted by law, Shiifa Limited may use aggregated or anonymized information to:</p>
+<ul><li>Develop new payment technologies;</li></ul>
+<ul><li>Improve fraud detection models;</li></ul>
+<ul><li>Enhance QR and NQR payment capabilities;</li></ul>
+<ul><li>Improve Direct Debit functionality;</li></ul>
+<ul><li>Evaluate operational performance;</li></ul>
+<ul><li>Support innovation initiatives.</li></ul>
+<p>Such information will not be used to identify individual Users unless otherwise permitted by applicable law.</p>
+<h3>5.16 Future Services</h3>
+<p>As PayXchange expands its range of Services, Shiifa Limited may process Personal Information for additional purposes that are compatible with the original purposes of collection or otherwise permitted by applicable law.</p>
+<p>Where required, Users will be notified before any materially different processing activities begin.</p>
+<h3>5.17 Limitation of Use</h3>
+<p>Shiifa Limited will not process Personal Information for purposes that are incompatible with this Privacy Policy unless:</p>
+<ul><li>Required by law;</li></ul>
+<ul><li>Authorized by the User;</li></ul>
+<ul><li>Necessary to protect the vital interests of an individual;</li></ul>
+<ul><li>Otherwise permitted under applicable data protection legislation.</li></ul>
+<h3>5.18 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited processes Personal Information only for legitimate, specified and lawful purposes;</p>
+<p>b. Your Personal Information is used to facilitate secure payment services, comply with regulatory obligations and protect the Platform;</p>
+<p>c. Personal Information may also be used to improve services, prevent fraud and provide customer support;</p>
+<p>d. Where required by law, your consent will be obtained before processing Personal Information for additional purposes;</p>
+<p>e. Shiifa Limited remains committed to processing Personal Information fairly, transparently and in accordance with applicable data protection laws.</p>
+<h2>CHAPTER 6: LEGAL BASES FOR PROCESSING PERSONAL
+INFORMATION</h2>
+<h3>6.1 Purpose</h3>
+<p>This Chapter explains the legal grounds upon which Shiifa Limited processes Personal Information through the PayXchange Platform.</p>
+<p>Shiifa Limited processes Personal Information only where there is a lawful basis for doing so under applicable data protection laws, including the Nigeria Data Protection Act, 2023 (NDPA) and other applicable legislation.</p>
+<p>Different legal bases may apply depending on the type of Personal Information processed, the Services being provided and the specific circumstances of the processing.</p>
+<h3>6.2 Performance of a Contract</h3>
+<p>Shiifa Limited processes Personal Information where such processing is necessary to perform its contractual obligations to Users under the PayXchange Terms and Conditions.</p>
+<p>This includes processing necessary to:</p>
+<ul><li>Register and manage User Accounts;</li></ul>
+<ul><li>Authenticate Users;</li></ul>
+<ul><li>Facilitate Customer-to-Merchant payments;</li></ul>
+<ul><li>Process Wallet transactions;</li></ul>
+<ul><li>Administer Virtual Account services;</li></ul>
+<ul><li>Process Direct Debit instructions;</li></ul>
+<ul><li>Enable QR and NQR payments;</li></ul>
+<ul><li>Provide customer support;</li></ul>
+<ul><li>Investigate transaction issues;</li></ul>
+<ul><li>Maintain transaction records.</li></ul>
+<p>Without processing certain Personal Information, Shiifa Limited may be unable to provide the requested Services.</p>
+<h3>6.3 Compliance with Legal Obligations</h3>
+<p>Shiifa Limited processes Personal Information where required to comply with applicable laws, regulations or lawful directives issued by competent authorities.</p>
+<p>This includes compliance with obligations relating to:</p>
+<ul><li>Know Your Customer (KYC);</li></ul>
+<ul><li>Anti-Money Laundering (AML);</li></ul>
+<ul><li>Counter-Terrorism Financing (CTF);</li></ul>
+<ul><li>Fraud prevention;</li></ul>
+<ul><li>Sanctions screening;</li></ul>
+<ul><li>Financial crime reporting;</li></ul>
+<ul><li>Tax reporting, where applicable;</li></ul>
+<ul><li>Record retention requirements;</li></ul>
+<ul><li>Lawful court orders;</li></ul>
+<ul><li>Requests from regulatory or law enforcement authorities.</li></ul>
+<p>Where processing is legally required, Shiifa Limited may process Personal Information without obtaining additional consent where permitted by applicable law.</p>
+<h3>6.4 Legitimate Interests</h3>
+<p>Shiifa Limited may process Personal Information where such processing is necessary for its legitimate interests or those of its Licensed Partners, provided that such interests do not override the fundamental rights and freedoms of Users.</p>
+<p>Legitimate interests may include:</p>
+<ul><li>Protecting the Platform from fraud;</li></ul>
+<ul><li>Maintaining Platform security;</li></ul>
+<ul><li>Improving system performance;</li></ul>
+<ul><li>Preventing unauthorized access;</li></ul>
+<ul><li>Investigating suspicious activities;</li></ul>
+<ul><li>Responding to customer enquiries;</li></ul>
+<ul><li>Maintaining business continuity;</li></ul>
+<ul><li>Improving products and services;</li></ul>
+<ul><li>Conducting internal audits;</li></ul>
+<ul><li>Managing operational risks.</li></ul>
+<p>Before relying on legitimate interests, Shiifa Limited shall assess whether the processing is fair, necessary and proportionate.</p>
+<h3>6.5 Consent</h3>
+<p>Where required by applicable law, Shiifa Limited will obtain a User&#x27;s consent before processing Personal Information.</p>
+<p>Consent may be requested for activities including:</p>
+<ul><li>Receiving promotional communications;</li></ul>
+<ul><li>Enabling optional device permissions;</li></ul>
+<ul><li>Collecting precise location information;</li></ul>
+<ul><li>Participating in surveys or research;</li></ul>
+<ul><li>Processing information for purposes not otherwise covered by another lawful basis.</li></ul>
+<p>Where processing is based on consent, Users may withdraw their consent at any time, subject to legal and contractual limitations.</p>
+<p>Withdrawal of consent shall not affect the lawfulness of processing carried out before the withdrawal.</p>
+<h3>6.6 Protection of Vital Interests</h3>
+<p>Shiifa Limited may process Personal Information where necessary to protect the vital interests of a User or another individual.</p>
+<p>Such circumstances may include:</p>
+<ul><li>Responding to serious security incidents;</li></ul>
+<ul><li>Preventing significant financial harm;</li></ul>
+<ul><li>Complying with emergency legal requirements;</li></ul>
+<ul><li>Protecting individuals from imminent risks associated with fraudulent or unlawful activities.</li></ul>
+<h3>6.7 Public Interest</h3>
+<p>Where permitted or required by applicable law, Shiifa Limited may process Personal Information in the public interest, including processing necessary for:</p>
+<ul><li>Preventing financial crime;</li></ul>
+<ul><li>Supporting lawful investigations;</li></ul>
+<ul><li>Maintaining the integrity of the financial system;</li></ul>
+<ul><li>Complying with national security obligations;</li></ul>
+<ul><li>Protecting public confidence in digital payment services.</li></ul>
+<h3>6.8 Fraud Prevention and Security</h3>
+<p>Shiifa Limited has a legitimate interest and, where applicable, a legal obligation to process Personal Information for fraud prevention and security purposes.</p>
+<p>Such processing may include:</p>
+<ul><li>Monitoring login attempts;</li></ul>
+<ul><li>Identifying unusual transaction behaviour;</li></ul>
+<ul><li>Detecting identity theft;</li></ul>
+<ul><li>Preventing unauthorized access;</li></ul>
+<ul><li>Assessing fraud indicators;</li></ul>
+<ul><li>Investigating suspicious activities;</li></ul>
+<ul><li>Maintaining audit logs;</li></ul>
+<ul><li>Protecting the Platform from cyber threats.</li></ul>
+<p>Certain security decisions may involve automated processing, supported by human review where appropriate.</p>
+<h3>6.9 Processing by Licensed Partners</h3>
+<p>Some Personal Information is processed by Licensed Partners to enable payment services and comply with regulatory obligations.</p>
+<p>Licensed Partners may process Personal Information under their own legal obligations or on behalf of Shiifa Limited, depending on the nature of the Service provided.</p>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner.</p>
+<h3>6.10 Regulatory Reporting</h3>
+<p>Shiifa Limited may process and disclose Personal Information where necessary to:</p>
+<ul><li>Satisfy regulatory reporting obligations;</li></ul>
+<ul><li>Respond to lawful information requests;</li></ul>
+<ul><li>Cooperate with supervisory authorities;</li></ul>
+<ul><li>Comply with court orders;</li></ul>
+<ul><li>Comply with applicable financial regulations.</li></ul>
+<p>Such processing shall be limited to what is reasonably necessary for the relevant legal purpose.</p>
+<h3>6.11 Automated Processing</h3>
+<p>Certain Personal Information may be processed using automated systems to:</p>
+<ul><li>Detect fraud;</li></ul>
+<ul><li>Authenticate Users;</li></ul>
+<ul><li>Monitor transaction patterns;</li></ul>
+<ul><li>Improve Platform security;</li></ul>
+<ul><li>Assess operational risks.</li></ul>
+<p>Shiifa Limited implements appropriate safeguards to reduce the risk of unfair or inaccurate automated decisions.</p>
+<p>Where required by law, Users may request further information regarding significant automated processing affecting them.</p>
+<h3>6.12 Data Minimization</h3>
+<p>Regardless of the legal basis relied upon, Shiifa Limited shall process only the Personal Information reasonably necessary to achieve the relevant purpose.</p>
+<p>Information that is no longer required shall be retained or deleted in accordance with applicable legal requirements and Shiifa Limited&#x27;s data retention practices.</p>
+<h3>6.13 Changes to the Legal Basis</h3>
+<p>Where the purpose for processing Personal Information changes materially, Shiifa Limited shall assess whether an alternative legal basis is required.</p>
+<p>Where consent becomes necessary under applicable law, Shiifa Limited shall obtain such consent before commencing the new processing activity.</p>
+<p>Users will be informed of material changes through appropriate communication channels.</p>
+<h3>6.14 Transparency</h3>
+<p>Shiifa Limited is committed to ensuring that Users understand:</p>
+<ul><li>Why Personal Information is processed;</li></ul>
+<ul><li>The legal basis supporting such processing;</li></ul>
+<ul><li>How Personal Information is protected;</li></ul>
+<ul><li>The rights available to Users under applicable law.</li></ul>
+<p>This Privacy Policy is intended to provide clear and transparent information regarding Shiifa Limited&#x27;s data processing activities.</p>
+<h3>6.15 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<ul><li>Shiifa Limited processes Personal Information only where a lawful basis exists;</li></ul>
+<ul><li>Different legal bases may apply depending on the nature of the Services provided;</li></ul>
+<p>c. Certain processing is necessary to perform contractual obligations, comply with legal requirements and protect the security of the Platform;</p>
+<p>d. Where consent is the applicable legal basis, you may withdraw that consent in accordance with applicable law;</p>
+<p>e. Shiifa Limited will process Personal Information fairly, lawfully and transparently while respecting your rights under applicable data protection legislation.</p>
+<h2>CHAPTER 7: DISCLOSURE AND SHARING OF PERSONAL
+INFORMATION</h2>
+<h3>7.1 Purpose</h3>
+<p>This Chapter explains the circumstances under which Shiifa Limited may disclose, transfer or otherwise share Personal Information with third parties.</p>
+<p>Shiifa Limited recognizes the confidential nature of Personal Information and is committed to limiting disclosures to those that are lawful, necessary and proportionate for the operation of the PayXchange Platform.</p>
+<p>Personal Information is never sold to third parties for their independent marketing purposes.</p>
+<h3>7.2 General Principle</h3>
+<p>Shiifa Limited shall disclose Personal Information only where such disclosure is:</p>
+<ul><li>Necessary to provide the Services;</li></ul>
+<ul><li>Required to facilitate payment transactions;</li></ul>
+<ul><li>Required by applicable law;</li></ul>
+<ul><li>Authorized by the User;</li></ul>
+<ul><li>Necessary to protect the rights, property or safety of Shiifa Limited, Users or third parties;</li></ul>
+<ul><li>Necessary for fraud prevention or security;</li></ul>
+<ul><li>Otherwise permitted by applicable law.</li></ul>
+<p>Every disclosure shall be limited to the minimum amount of Personal Information reasonably necessary for the intended purpose.</p>
+<h3>7.3 Disclosure to Licensed Partners</h3>
+<p>Because PayXchange operates using regulated financial infrastructure, Shiifa Limited may disclose Personal Information to its Licensed Partners where necessary to:</p>
+<ul><li>Verify User identities;</li></ul>
+<ul><li>Process Customer-to-Merchant payments;</li></ul>
+<ul><li>Authenticate Transactions;</li></ul>
+<ul><li>Process Wallet services;</li></ul>
+<ul><li>Administer Virtual Account services;</li></ul>
+<ul><li>Process Direct Debit instructions;</li></ul>
+<ul><li>Facilitate QR and NQR payments;</li></ul>
+<ul><li>Perform settlement and reconciliation;</li></ul>
+<ul><li>Detect and prevent fraud;</li></ul>
+<ul><li>Comply with regulatory obligations.</li></ul>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner.</p>
+<p>Shiifa Limited may appoint additional Licensed Partners as the Platform evolves, and Personal Information may be shared with such partners where necessary to provide the Services.</p>
+<h3>7.4 Disclosure to Banks and Financial Institutions</h3>
+<p>Where necessary to facilitate payment services, Personal Information may be shared with regulated banks and financial institutions for purposes including:</p>
+<ul><li>Payment authorization;</li></ul>
+<ul><li>Account verification;</li></ul>
+<ul><li>Settlement processing;</li></ul>
+<ul><li>Direct Debit execution;</li></ul>
+<ul><li>Transaction confirmation;</li></ul>
+<ul><li>Refund processing;</li></ul>
+<ul><li>Payment reversals;</li></ul>
+<ul><li>Reconciliation;</li></ul>
+<ul><li>Fraud investigations.</li></ul>
+<p>Such disclosures are limited to information required for the relevant financial transaction.</p>
+<h3>7.5 Disclosure to Payment Infrastructure Providers</h3>
+<p>Shiifa Limited may share Personal Information with payment infrastructure providers involved in the processing of Transactions, including:</p>
+<ul><li>Payment switches;</li></ul>
+<ul><li>Payment gateways;</li></ul>
+<ul><li>QR/NQR infrastructure providers;</li></ul>
+<ul><li>API integration providers;</li></ul>
+<ul><li>Transaction routing providers;</li></ul>
+<ul><li>Settlement service providers.</li></ul>
+<p>These entities process Personal Information solely for the purpose of providing payment-related services.</p>
+<h3>7.6 Disclosure to Identity Verification Providers</h3>
+<p>To comply with Know Your Customer (KYC) and regulatory requirements, Shiifa Limited may disclose Personal Information to authorized identity verification providers for purposes including:</p>
+<ul><li>Document verification;</li></ul>
+<ul><li>Facial verification;</li></ul>
+<ul><li>Liveness detection;</li></ul>
+<ul><li>Address verification;</li></ul>
+<ul><li>Sanctions screening;</li></ul>
+<ul><li>Politically exposed person (PEP) screening;</li></ul>
+<ul><li>Anti-money laundering (AML) screening;</li></ul>
+<ul><li>Fraud prevention.</li></ul>
+<p>Only information reasonably necessary for verification purposes shall be disclosed.</p>
+<h3>7.7 Disclosure to Service Providers</h3>
+<p>Shiifa Limited may engage trusted third-party service providers to perform functions on its behalf.</p>
+<p>Such service providers may include those providing:</p>
+<ul><li>Cloud hosting;</li></ul>
+<ul><li>Data storage;</li></ul>
+<ul><li>Cybersecurity services;</li></ul>
+<ul><li>Customer support tools;</li></ul>
+<ul><li>Communications services;</li></ul>
+<ul><li>Analytics;</li></ul>
+<ul><li>Fraud detection;</li></ul>
+<ul><li>Software maintenance;</li></ul>
+<ul><li>Technical support.</li></ul>
+<p>Service providers shall process Personal Information only in accordance with contractual obligations and appropriate confidentiality and security requirements.</p>
+<h3>7.8 Disclosure to Regulatory Authorities</h3>
+<p>Shiifa Limited may disclose Personal Information where required by applicable law or lawful regulatory directives.</p>
+<p>Such disclosures may be made to competent authorities including:</p>
+<ul><li>The Central Bank of Nigeria (CBN);</li></ul>
+<ul><li>The Nigeria Data Protection Commission (NDPC);</li></ul>
+<ul><li>The Nigerian Financial Intelligence Unit (NFIU);</li></ul>
+<ul><li>The Economic and Financial Crimes Commission (EFCC);</li></ul>
+<ul><li>The Nigeria Police Force;</li></ul>
+<ul><li>The Corporate Affairs Commission (CAC), where applicable;</li></ul>
+<ul><li>The Federal Inland Revenue Service (FIRS), where applicable;</li></ul>
+<ul><li>Any other competent regulatory authority.</li></ul>
+<p>Shiifa Limited shall disclose only the information reasonably necessary to satisfy the relevant legal requirement.</p>
+<h3>7.9 Disclosure to Law Enforcement</h3>
+<p>Where legally required or reasonably necessary to investigate fraud, financial crime or other unlawful activities, Shiifa Limited may disclose Personal Information to:</p>
+<ul><li>Law enforcement agencies;</li></ul>
+<ul><li>Courts of competent jurisdiction;</li></ul>
+<ul><li>Investigative authorities;</li></ul>
+<ul><li>Prosecutors;</li></ul>
+<ul><li>Regulatory investigators.</li></ul>
+<p>Such disclosures shall be made in accordance with applicable law.</p>
+<h3>7.10 Disclosure During Business Transactions</h3>
+<p>If Shiifa Limited undergoes:</p>
+<ul><li>A merger;</li></ul>
+<ul><li>Acquisition;</li></ul>
+<ul><li>Corporate restructuring;</li></ul>
+<ul><li>Investment transaction;</li></ul>
+<ul><li>Sale of assets;</li></ul>
+<ul><li>Business transfer;</li></ul>
+<ul><li>Insolvency proceedings,</li></ul>
+<p>Personal Information may be transferred as part of that transaction, provided appropriate safeguards are implemented and applicable legal requirements are satisfied.</p>
+<p>Users shall be notified where required by applicable law.</p>
+<h3>7.11 Disclosure with User Consent</h3>
+<p>Where no other lawful basis applies, Shiifa Limited shall seek the User&#x27;s consent before disclosing Personal Information.</p>
+<p>Consent-based disclosures may include:</p>
+<ul><li>Optional integrations;</li></ul>
+<ul><li>Promotional partnerships;</li></ul>
+<ul><li>Additional financial services;</li></ul>
+<ul><li>Third-party value-added services.</li></ul>
+<p>Users may withdraw such consent at any time, subject to applicable legal and contractual limitations.</p>
+<h3>7.12 Disclosure for Fraud Prevention</h3>
+<p>Shiifa Limited may share Personal Information with Licensed Partners, financial institutions and fraud prevention organizations where reasonably necessary to:</p>
+<ul><li>Investigate suspicious activities;</li></ul>
+<ul><li>Detect fraudulent transactions;</li></ul>
+<ul><li>Prevent identity theft;</li></ul>
+<ul><li>Protect Users;</li></ul>
+<ul><li>Prevent financial crime;</li></ul>
+<ul><li>Maintain the integrity of the payment ecosystem.</li></ul>
+<p>Such disclosures support the security of both Users and the wider financial system.</p>
+<h3>7.13 International Disclosures</h3>
+<p>Where Personal Information is transferred outside Nigeria, Shiifa Limited shall take reasonable steps to ensure that appropriate legal, contractual and technical safeguards are implemented in accordance with applicable data protection laws.</p>
+<p>Further information regarding international data transfers is provided in Chapter 10 of this Privacy Policy.</p>
+<h3>7.14 Confidentiality Obligations</h3>
+<p>All third parties receiving Personal Information from Shiifa Limited are expected to maintain appropriate confidentiality, privacy and security standards.</p>
+<p>Where appropriate, Shiifa Limited shall require such parties to:</p>
+<ul><li>Process Personal Information only for authorized purposes;</li></ul>
+<ul><li>Implement appropriate security measures;</li></ul>
+<ul><li>Comply with applicable privacy laws;</li></ul>
+<ul><li>Protect the confidentiality of the information received.</li></ul>
+<h3>7.15 Information Not Shared</h3>
+<p>Except as described in this Privacy Policy or required by applicable law, Shiifa Limited does not:</p>
+<ul><li>Sell Users&#x27; Personal Information;</li></ul>
+<ul><li>Rent Personal Information to third parties;</li></ul>
+<ul><li>Disclose Personal Information for unrelated commercial purposes;</li></ul>
+<ul><li>Permit unauthorized third parties to access Personal Information.</li></ul>
+<h3>7.16 Future Sharing Arrangements</h3>
+<p>As PayXchange expands its Services, Shiifa Limited may engage additional Licensed Partners or service providers.</p>
+<p>Where new categories of recipients materially affect the processing of Personal Information, this Privacy Policy shall be updated and Users shall be notified where required by applicable law.</p>
+<h3>7.17 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited may disclose Personal Information where necessary to provide the Services, comply with legal obligations or protect the security of the Platform;</p>
+<p>b. Personal Information may be shared with Licensed Partners, including Nomba, banks, payment infrastructure providers, identity verification providers, regulators and trusted service providers;</p>
+<p>c. Shiifa Limited does not sell Personal Information to third parties for independent marketing purposes;</p>
+<ul><li>Disclosures are limited to what is reasonably necessary for the relevant purpose;</li></ul>
+<p>e. All disclosures are made in accordance with this Privacy Policy and applicable data protection laws.</p>
+<h2>CHAPTER 8: DATA SECURITY AND PROTECTION OF PERSONAL
+INFORMATION</h2>
+<h3>8.1 Purpose</h3>
+<p>This Chapter explains the measures implemented by Shiifa Limited to safeguard Personal Information against unauthorized access, disclosure, alteration, loss, misuse or destruction.</p>
+<p>Recognizing that digital payment platforms process sensitive financial and identity information, Shiifa Limited is committed to maintaining appropriate administrative, technical and physical safeguards designed to protect the confidentiality, integrity and availability of Personal Information.</p>
+<p>While no security system can guarantee absolute protection, Shiifa Limited continuously reviews and improves its security practices to address evolving threats.</p>
+<h3>8.2 Security Commitment</h3>
+<p>Shiifa Limited is committed to implementing reasonable and appropriate security measures consistent with:</p>
+<ul><li>The Nigeria Data Protection Act, 2023 (NDPA);</li></ul>
+<ul><li>Applicable regulations issued by the Central Bank of Nigeria (CBN);</li></ul>
+<ul><li>Industry-recognized cybersecurity standards;</li></ul>
+<ul><li>Contractual obligations with Licensed Partners;</li></ul>
+<ul><li>Evolving security best practices.</li></ul>
+<p>Security controls are reviewed periodically to ensure their continued effectiveness.</p>
+<h3>8.3 Administrative Safeguards</h3>
+<p>Shiifa Limited maintains administrative measures designed to protect Personal Information, including:</p>
+<ul><li>Information security policies;</li></ul>
+<ul><li>Employee confidentiality obligations;</li></ul>
+<ul><li>Role-based access controls;</li></ul>
+<ul><li>Internal security procedures;</li></ul>
+<ul><li>Periodic security awareness training;</li></ul>
+<ul><li>Incident reporting procedures;</li></ul>
+<ul><li>Vendor risk management;</li></ul>
+<ul><li>Periodic compliance reviews.</li></ul>
+<p>Access to Personal Information is restricted to personnel whose duties reasonably require such access.</p>
+<h3>8.4 Technical Safeguards</h3>
+<p>Shiifa Limited employs appropriate technical safeguards, which may include:</p>
+<ul><li>Encryption of data during transmission using secure communication protocols;</li></ul>
+<ul><li>Encryption of sensitive data at rest, where appropriate;</li></ul>
+<ul><li>Firewalls and network security controls;</li></ul>
+<ul><li>Intrusion detection and prevention systems;</li></ul>
+<ul><li>Anti-malware protection;</li></ul>
+<ul><li>Secure authentication mechanisms;</li></ul>
+<ul><li>Secure application development practices;</li></ul>
+<ul><li>Vulnerability assessments;</li></ul>
+<ul><li>Security monitoring and logging;</li></ul>
+<ul><li>Periodic software updates and security patches.</li></ul>
+<p>These safeguards are intended to reduce the risk of unauthorized access or compromise.</p>
+<h3>8.5 Authentication and Access Control</h3>
+<p>To protect User Accounts and Personal Information, Shiifa Limited implements authentication and access control measures that may include:</p>
+<ul><li>Secure password requirements;</li></ul>
+<ul><li>Personal Identification Numbers (PINs);</li></ul>
+<ul><li>One-Time Passwords (OTPs);</li></ul>
+<ul><li>Biometric authentication, where supported;</li></ul>
+<ul><li>Device recognition;</li></ul>
+<ul><li>Session management;</li></ul>
+<ul><li>Automatic session timeouts after periods of inactivity;</li></ul>
+<ul><li>Multi-factor authentication, where available.</li></ul>
+<p>Users are responsible for safeguarding their authentication credentials and must not disclose them to unauthorized persons.</p>
+<h3>8.6 Protection of Payment Information</h3>
+<p>Given PayXchange&#x27;s role as a payment facilitation platform, Shiifa Limited implements measures designed to protect payment-related information throughout the transaction lifecycle.</p>
+<p>These measures may include:</p>
+<ul><li>Secure transmission of payment instructions;</li></ul>
+<ul><li>Transaction authentication;</li></ul>
+<ul><li>Encrypted communication with Licensed Partners;</li></ul>
+<ul><li>Transaction validation;</li></ul>
+<ul><li>Payment integrity checks;</li></ul>
+<ul><li>Secure reconciliation processes;</li></ul>
+<ul><li>Continuous monitoring for suspicious payment activities.</li></ul>
+<p>At no time should Users share confidential authentication credentials, such as PINs or OTPs, with any person claiming to represent PayXchange.</p>
+<h3>8.7 Fraud Detection and Prevention</h3>
+<p>Shiifa Limited employs systems and procedures intended to identify and prevent fraudulent activities.</p>
+<p>These may include:</p>
+<ul><li>Monitoring transaction patterns;</li></ul>
+<ul><li>Detecting unusual account behaviour;</li></ul>
+<ul><li>Identifying suspicious login attempts;</li></ul>
+<ul><li>Monitoring device changes;</li></ul>
+<ul><li>Assessing fraud risk indicators;</li></ul>
+<ul><li>Screening against sanctions and watchlists, where required;</li></ul>
+<ul><li>Automated fraud detection tools supported by human review where appropriate.</li></ul>
+<p>Where suspicious activities are identified, Shiifa Limited may temporarily delay, restrict or decline Transactions pending further review.</p>
+<h3>8.8 Monitoring and Audit Logs</h3>
+<p>Shiifa Limited maintains security logs and audit records to:</p>
+<ul><li>Investigate security incidents;</li></ul>
+<ul><li>Detect unauthorized activities;</li></ul>
+<ul><li>Support regulatory compliance;</li></ul>
+<ul><li>Improve system security;</li></ul>
+<ul><li>Facilitate forensic investigations;</li></ul>
+<ul><li>Maintain accountability.</li></ul>
+<p>Access to audit logs is restricted to authorized personnel.</p>
+<h3>8.9 Security Incident Management</h3>
+<p>Shiifa Limited maintains procedures for responding to actual or suspected security incidents.</p>
+<p>Such procedures may include:</p>
+<ul><li>Identifying and assessing the incident;</li></ul>
+<ul><li>Containing the threat;</li></ul>
+<ul><li>Investigating the root cause;</li></ul>
+<ul><li>Implementing corrective measures;</li></ul>
+<ul><li>Restoring affected services;</li></ul>
+<ul><li>Documenting the incident;</li></ul>
+<ul><li>Notifying affected Users and competent authorities where required by applicable law.</li></ul>
+<p>Incident response activities are designed to minimize potential harm to Users and the Platform.</p>
+<h3>8.10 Responsibilities of Users</h3>
+<p>Users also play an important role in protecting their Personal Information.</p>
+<p>Users should:</p>
+<ul><li>Maintain the confidentiality of passwords, PINs and OTPs;</li></ul>
+<ul><li>Avoid sharing authentication credentials with any person;</li></ul>
+<ul><li>Use trusted devices to access the Platform;</li></ul>
+<ul><li>Install security updates on their devices;</li></ul>
+<ul><li>Promptly report suspected fraud or unauthorized access;</li></ul>
+<ul><li>Verify the authenticity of communications claiming to originate from PayXchange;</li></ul>
+<ul><li>Log out of shared or public devices after use.</li></ul>
+<p>Failure to follow reasonable security practices may increase the risk of unauthorized access to an Account.</p>
+<h3>8.11 Employee Confidentiality</h3>
+<p>Employees, contractors and authorized representatives of Shiifa Limited who have access to Personal Information are required to:</p>
+<ul><li>Maintain strict confidentiality;</li></ul>
+<ul><li>Process information only as authorized;</li></ul>
+<ul><li>Comply with internal privacy and security policies;</li></ul>
+<ul><li>Protect Personal Information against unauthorized disclosure.</li></ul>
+<p>Appropriate disciplinary measures may be taken where confidentiality obligations are breached.</p>
+<h3>8.12 Third-Party Security</h3>
+<p>Where Shiifa Limited engages Licensed Partners or service providers that process Personal Information, reasonable steps are taken to ensure that such parties implement appropriate security measures consistent with applicable legal and contractual requirements.</p>
+<p>Shiifa Limited, however, is not responsible for security failures arising solely from the independent systems of third parties that are outside its reasonable control.</p>
+<h3>8.13 Data Integrity</h3>
+<p>Shiifa Limited takes reasonable measures to help ensure that Personal Information remains:</p>
+<ul><li>Accurate;</li></ul>
+<ul><li>Complete;</li></ul>
+<ul><li>Protected from unauthorized modification;</li></ul>
+<ul><li>Available when required for legitimate purposes.</li></ul>
+<p>Users are encouraged to promptly update their Account information whenever changes occur.</p>
+<h3>8.14 Continuous Improvement</h3>
+<p>Cybersecurity threats continue to evolve.</p>
+<p>Accordingly, Shiifa Limited regularly reviews and enhances its security controls, technologies and procedures to strengthen the protection of Personal Information and improve the resilience of the PayXchange Platform.</p>
+<h3>8.15 Limitation of Security Guarantees</h3>
+<p>Although Shiifa Limited employs commercially reasonable safeguards, no electronic storage system, internet transmission or information technology environment can be guaranteed to be completely secure.</p>
+<p>Accordingly:</p>
+<p>a. Users acknowledge the inherent risks associated with electronic communications and digital payment services;</p>
+<p>b. Shiifa Limited does not warrant that unauthorized access, cyberattacks or security incidents will never occur;</p>
+<p>c. Shiifa Limited shall not be liable for security incidents resulting from circumstances beyond its reasonable control, except where liability arises under applicable law or from its proven negligence or wilful misconduct.</p>
+<p>Nothing in this Section limits any rights that Users may have under applicable data protection or consumer protection laws.</p>
+<h3>8.16 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited implements reasonable administrative, technical and physical safeguards to protect Personal Information;</p>
+<ul><li>Security is a shared responsibility between Shiifa Limited and Users;</li></ul>
+<p>c. Users are responsible for safeguarding their authentication credentials and promptly reporting suspected security incidents;</p>
+<ul><li>Shiifa Limited continually reviews and improves its security measures to address evolving risks;</li></ul>
+<p>e. Despite reasonable safeguards, no electronic system can guarantee absolute security, and Personal Information will be protected in accordance with applicable law and this Privacy Policy.</p>
+<h2>CHAPTER 9: DATA RETENTION, ARCHIVING AND SECURE DISPOSAL</h2>
+<h3>9.1 Purpose</h3>
+<p>This Chapter explains how Shiifa Limited retains, archives and securely disposes of Personal Information processed through the PayXchange Platform.</p>
+<p>Shiifa Limited recognizes that retaining Personal Information for longer than necessary increases privacy and security risks. Accordingly, Personal Information is retained only for as long as necessary to fulfill the purposes described in this Privacy Policy, comply with applicable laws, resolve disputes, enforce legal rights and satisfy regulatory obligations.</p>
+<h3>9.2 General Retention Principle</h3>
+<p>Shiifa Limited shall retain Personal Information only for the period reasonably necessary to:</p>
+<ul><li>Provide the Services;</li></ul>
+<ul><li>Maintain User Accounts;</li></ul>
+<ul><li>Facilitate Transactions;</li></ul>
+<ul><li>Comply with legal and regulatory obligations;</li></ul>
+<ul><li>Investigate fraud and security incidents;</li></ul>
+<ul><li>Resolve complaints and disputes;</li></ul>
+<ul><li>Maintain business records;</li></ul>
+<ul><li>Enforce contractual rights.</li></ul>
+<p>When Personal Information is no longer required, it shall be securely deleted, anonymized or otherwise disposed of in accordance with applicable law.</p>
+<h3>9.3 Retention of Account Information</h3>
+<p>Personal Information relating to User Accounts may be retained:</p>
+<ul><li>While the Account remains active;</li></ul>
+<ul><li>During any period required to resolve pending disputes or investigations;</li></ul>
+<ul><li>For any additional period required by applicable law or regulatory requirements after the</li></ul>
+<p>Account is closed.</p>
+<p>Closure of an Account does not automatically require immediate deletion of all Personal Information.</p>
+<h3>9.4 Retention of Transaction Records</h3>
+<p>Shiifa Limited may retain Transaction records, including payment references, settlement records and related information, for periods required to:</p>
+<ul><li>Comply with financial regulations;</li></ul>
+<ul><li>Facilitate audits;</li></ul>
+<ul><li>Support reconciliation processes;</li></ul>
+<ul><li>Investigate fraud;</li></ul>
+<ul><li>Resolve payment disputes;</li></ul>
+<ul><li>Respond to lawful requests from regulators or law enforcement agencies.</li></ul>
+<p>Transaction records may therefore be retained after a User ceases using the Platform where required by law.</p>
+<h3>9.5 Retention of KYC Information</h3>
+<p>Identity verification information collected during Know Your Customer (KYC) procedures may be retained for periods required under applicable laws governing:</p>
+<ul><li>Anti-money laundering (AML);</li></ul>
+<ul><li>Counter-terrorism financing (CTF);</li></ul>
+<ul><li>Financial crime prevention;</li></ul>
+<ul><li>Regulatory supervision;</li></ul>
+<ul><li>Audit requirements.</li></ul>
+<p>Such information may continue to be retained after an Account has been closed where legally required.</p>
+<h3>9.6 Retention of Customer Support Records</h3>
+<p>Communications with Customer Support, including emails, complaint records, support tickets and related correspondence, may be retained to:</p>
+<ul><li>Improve customer service;</li></ul>
+<ul><li>Investigate complaints;</li></ul>
+<ul><li>Resolve disputes;</li></ul>
+<ul><li>Monitor service quality;</li></ul>
+<ul><li>Comply with legal obligations.</li></ul>
+<p>Retention periods may vary depending on the nature of the enquiry or complaint.</p>
+<h3>9.7 Retention of Security Records</h3>
+<p>Security-related information, including authentication logs, audit logs and fraud monitoring records, may be retained for as long as reasonably necessary to:</p>
+<ul><li>Investigate security incidents;</li></ul>
+<ul><li>Prevent fraud;</li></ul>
+<ul><li>Detect unauthorized access;</li></ul>
+<ul><li>Support regulatory compliance;</li></ul>
+<ul><li>Protect the integrity of the Platform.</li></ul>
+<h3>9.8 Legal Holds</h3>
+<p>Where Shiifa Limited becomes aware of:</p>
+<ul><li>Pending litigation;</li></ul>
+<ul><li>Regulatory investigations;</li></ul>
+<ul><li>Law enforcement requests;</li></ul>
+<ul><li>Arbitration proceedings;</li></ul>
+<ul><li>Fraud investigations;</li></ul>
+<ul><li>Legal claims,</li></ul>
+<p>Personal Information relevant to such matters may be retained beyond normal retention periods until the matter has been fully resolved.</p>
+<h3>9.9 Archiving</h3>
+<p>Where appropriate, Personal Information that is no longer actively required for operational purposes may be securely archived.</p>
+<p>Archived information shall remain subject to:</p>
+<ul><li>Appropriate security controls;</li></ul>
+<ul><li>Confidentiality obligations;</li></ul>
+<ul><li>Access restrictions;</li></ul>
+<ul><li>Applicable legal requirements.</li></ul>
+<p>Archived information shall be accessed only where reasonably necessary.</p>
+<h3>9.10 Secure Disposal</h3>
+<p>When Personal Information is no longer required, Shiifa Limited shall take reasonable steps to securely dispose of it.</p>
+<p>Secure disposal methods may include:</p>
+<ul><li>Permanent deletion;</li></ul>
+<ul><li>Irreversible anonymization;</li></ul>
+<ul><li>Secure destruction of physical records;</li></ul>
+<ul><li>Secure overwriting of electronic storage media;</li></ul>
+<ul><li>Other recognized methods of secure disposal appropriate to the nature of the information.</li></ul>
+<p>Shiifa Limited aims to prevent unauthorized recovery of disposed Personal Information.</p>
+<h3>9.11 Anonymized Information</h3>
+<p>Where Personal Information has been permanently anonymized so that individuals can no longer be identified, Shiifa Limited may retain and use such information for legitimate purposes including:</p>
+<ul><li>Statistical analysis;</li></ul>
+<ul><li>Business reporting;</li></ul>
+<ul><li>Service improvement;</li></ul>
+<ul><li>Research and innovation;</li></ul>
+<ul><li>Fraud trend analysis;</li></ul>
+<ul><li>Operational planning.</li></ul>
+<p>Anonymized information is not treated as Personal Information once it can no longer reasonably identify an individual.</p>
+<h3>9.12 Requests for Deletion</h3>
+<p>Users may request the deletion of certain Personal Information where permitted under applicable law.</p>
+<p>Shiifa Limited may decline or delay such requests where retention remains necessary to:</p>
+<ul><li>Comply with legal obligations;</li></ul>
+<ul><li>Complete pending Transactions;</li></ul>
+<ul><li>Resolve disputes;</li></ul>
+<ul><li>Investigate fraud;</li></ul>
+<ul><li>Protect legal rights;</li></ul>
+<ul><li>Satisfy regulatory record-keeping requirements.</li></ul>
+<p>Where deletion cannot be carried out immediately, Shiifa Limited shall inform the User where required by applicable law.</p>
+<h3>9.13 Periodic Review</h3>
+<p>Shiifa Limited periodically reviews the Personal Information it retains to determine whether continued retention remains necessary.</p>
+<p>Information that no longer serves a legitimate operational, contractual or legal purpose shall be securely deleted or anonymized where appropriate.</p>
+<h3>9.14 Licensed Partner Records</h3>
+<p>Certain Personal Information may also be retained by Licensed Partners in accordance with their own legal and regulatory obligations.</p>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner.</p>
+<p>Retention periods applied by Licensed Partners may differ where required by applicable financial regulations.</p>
+<h3>9.15 User Responsibilities</h3>
+<p>Users are encouraged to:</p>
+<ul><li>Maintain copies of important transaction records where appropriate;</li></ul>
+<ul><li>Download account statements before requesting Account closure;</li></ul>
+<ul><li>Ensure their Personal Information remains accurate during the retention period;</li></ul>
+<ul><li>Promptly notify Shiifa Limited of any inaccuracies requiring correction.</li></ul>
+<h3>9.16 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited retains Personal Information only for as long as reasonably necessary to provide the Services and comply with applicable law;</p>
+<p>b. Certain information, including Transaction records and KYC information, may be retained after Account closure to satisfy legal and regulatory obligations;</p>
+<p>c. Personal Information that is no longer required shall be securely deleted, anonymized or otherwise disposed of using appropriate methods;</p>
+<p>d. Deletion requests may be limited where continued retention is required by law or necessary to protect the legitimate interests of Shiifa Limited, its Licensed Partners or other Users;</p>
+<p>e. Shiifa Limited remains committed to responsible data retention practices that balance operational needs, regulatory compliance and the protection of Users&#x27; privacy.</p>
+<h2>CHAPTER 10: INTERNATIONAL DATA TRANSFERS</h2>
+<h3>10.1 Purpose</h3>
+<p>This Chapter explains the circumstances under which Personal Information processed by Shiifa Limited may be transferred to, accessed from or processed outside the Federal Republic of Nigeria.</p>
+<p>Shiifa Limited recognizes that the use of modern payment infrastructure, cloud technologies and specialized service providers may require certain Personal Information to be processed across national borders.</p>
+<p>Where such transfers occur, Shiifa Limited is committed to ensuring that Personal Information continues to receive an appropriate level of protection in accordance with applicable laws and recognized international privacy standards.</p>
+<h3>10.2 General Principle</h3>
+<p>Shiifa Limited shall take reasonable steps to ensure that any international transfer of Personal Information:</p>
+<ul><li>Is lawful;</li></ul>
+<ul><li>Is necessary for a legitimate business or regulatory purpose;</li></ul>
+<ul><li>Is adequately protected;</li></ul>
+<ul><li>Complies with applicable data protection legislation;</li></ul>
+<ul><li>Does not unnecessarily expose Users to privacy or security risks.</li></ul>
+<p>International transfers shall not be undertaken solely for convenience where a less intrusive alternative is reasonably available.</p>
+<h3>10.3 Circumstances in Which International Transfers May Occur</h3>
+<p>Personal Information may be transferred outside Nigeria where reasonably necessary for purposes including:</p>
+<ul><li>Secure cloud hosting;</li></ul>
+<ul><li>Data backup and disaster recovery;</li></ul>
+<ul><li>Cybersecurity monitoring;</li></ul>
+<ul><li>Fraud detection;</li></ul>
+<ul><li>Payment processing;</li></ul>
+<ul><li>Transaction routing;</li></ul>
+<ul><li>Technical support;</li></ul>
+<ul><li>Software maintenance;</li></ul>
+<ul><li>Analytics;</li></ul>
+<ul><li>Business continuity;</li></ul>
+<ul><li>Regulatory compliance.</li></ul>
+<p>Such transfers shall occur only where appropriate safeguards have been implemented.</p>
+<h3>10.4 Licensed Partners and Service Providers</h3>
+<p>Shiifa Limited may engage Licensed Partners, technology providers or service providers that process Personal Information from locations outside Nigeria.</p>
+<p>Where this occurs, Shiifa Limited shall take reasonable steps to ensure that such organizations:</p>
+<ul><li>Maintain appropriate privacy standards;</li></ul>
+<ul><li>Implement suitable security measures;</li></ul>
+<ul><li>Process Personal Information only for authorized purposes;</li></ul>
+<ul><li>Comply with contractual confidentiality obligations;</li></ul>
+<ul><li>Observe applicable legal requirements.</li></ul>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner. Additional Licensed Partners may be engaged in the future where necessary to expand or improve PayXchange&#x27;s Services.</p>
+<h3>10.5 Legal Safeguards</h3>
+<p>Where Personal Information is transferred internationally, Shiifa Limited shall implement appropriate safeguards, which may include:</p>
+<ul><li>Contractual data protection obligations;</li></ul>
+<ul><li>Confidentiality agreements;</li></ul>
+<ul><li>Technical and organizational security measures;</li></ul>
+<ul><li>Access restrictions;</li></ul>
+<ul><li>Encryption during transmission;</li></ul>
+<ul><li>Secure authentication controls;</li></ul>
+<ul><li>Other safeguards recognized under applicable law.</li></ul>
+<p>These measures are intended to provide a level of protection comparable to that required under Nigerian law.</p>
+<h3>10.6 Assessment of Recipient Jurisdictions</h3>
+<p>Before transferring Personal Information internationally, Shiifa Limited may consider factors including:</p>
+<ul><li>The data protection laws of the destination country;</li></ul>
+<ul><li>The security practices of the recipient;</li></ul>
+<ul><li>Contractual protections available;</li></ul>
+<ul><li>The nature of the Personal Information involved;</li></ul>
+<ul><li>The risks associated with the transfer;</li></ul>
+<ul><li>The purposes for which the information will be processed.</li></ul>
+<p>Transfers shall be undertaken only where Shiifa Limited reasonably believes that appropriate protection can be maintained.</p>
+<h3>10.7 Security During International Transfers</h3>
+<p>To reduce risks associated with cross-border processing, Shiifa Limited may implement security measures including:</p>
+<ul><li>Encrypted communications;</li></ul>
+<ul><li>Secure network connections;</li></ul>
+<ul><li>Restricted system access;</li></ul>
+<ul><li>Authentication controls;</li></ul>
+<ul><li>Monitoring of international data access;</li></ul>
+<ul><li>Audit logging;</li></ul>
+<ul><li>Incident response procedures.</li></ul>
+<p>These safeguards help protect Personal Information while it is transmitted and processed.</p>
+<h3>10.8 Regulatory and Legal Disclosures</h3>
+<p>Personal Information may be transferred outside Nigeria where required:</p>
+<ul><li>By applicable law;</li></ul>
+<ul><li>Pursuant to lawful court orders;</li></ul>
+<ul><li>Under international regulatory cooperation arrangements;</li></ul>
+<ul><li>In connection with investigations into financial crime;</li></ul>
+<ul><li>To comply with obligations applicable to Licensed Partners.</li></ul>
+<p>Such transfers shall be limited to the information reasonably necessary for the relevant legal purpose.</p>
+<h3>10.9 User Rights</h3>
+<p>Where applicable under law, Users may request information regarding:</p>
+<ul><li>Whether their Personal Information is transferred internationally;</li></ul>
+<ul><li>The categories of recipients;</li></ul>
+<ul><li>The safeguards applied to such transfers;</li></ul>
+<ul><li>The purposes of the transfer.</li></ul>
+<p>Shiifa Limited shall respond to such requests in accordance with applicable legal requirements and subject to any lawful limitations.</p>
+<h3>10.10 Future International Services</h3>
+<p>As PayXchange expands its operations, Shiifa Limited may introduce additional services involving international payment infrastructure, cross-border technology providers or international business operations.</p>
+<p>Where these developments materially affect the international processing of Personal Information, Shiifa Limited shall update this Privacy Policy and notify Users where required by applicable law.</p>
+<h3>10.11 Limitation on International Transfers</h3>
+<p>Shiifa Limited shall not knowingly transfer Personal Information internationally where doing so would:</p>
+<ul><li>Violate applicable law;</li></ul>
+<ul><li>Expose Users to unreasonable privacy risks;</li></ul>
+<ul><li>Undermine the security of the Platform;</li></ul>
+<ul><li>Be inconsistent with this Privacy Policy.</li></ul>
+<p>International transfers shall always be proportionate to the intended purpose.</p>
+<h3>10.12 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Certain Personal Information may be transferred to or processed in jurisdictions outside Nigeria where necessary to provide the Services;</p>
+<p>b. Shiifa Limited shall implement reasonable legal, contractual, technical and organizational safeguards to protect Personal Information during international transfers;</p>
+<p>c. International transfers may occur in connection with secure cloud services, payment infrastructure, cybersecurity, fraud prevention, technical support and other legitimate operational purposes;</p>
+<p>d. Shiifa Limited remains committed to ensuring that Personal Information transferred internationally receives a level of protection consistent with applicable Nigerian data protection laws;</p>
+<p>e. Where material changes occur regarding international data transfers, Shiifa Limited shall update this Privacy Policy and provide notice where required by applicable law.</p>
+<h2>CHAPTER 11: YOUR PRIVACY RIGHTS</h2>
+<h3>11.1 Purpose</h3>
+<p>This Chapter explains the rights available to Users regarding their Personal Information and the procedures for exercising those rights.</p>
+<p>Shiifa Limited respects the privacy rights of its Users and is committed to ensuring that Personal Information is processed fairly, lawfully and transparently in accordance with the Nigeria Data Protection Act, 2023 (NDPA) and other applicable laws.</p>
+<p>While certain rights may be subject to legal or regulatory limitations, Shiifa Limited will consider every valid request in good faith and respond within the timeframes required by applicable law.</p>
+<h3>11.2 General Rights</h3>
+<p>Subject to applicable law, Users may exercise certain rights in relation to their Personal Information held by Shiifa Limited.</p>
+<p>These rights are intended to provide Users with greater transparency, control and confidence regarding how their Personal Information is collected, used, stored and shared.</p>
+<h3>11.3 Right of Access</h3>
+<p>Users have the right to request confirmation as to whether Shiifa Limited processes their Personal Information.</p>
+<p>Where applicable, Users may request access to information including:</p>
+<ul><li>The categories of Personal Information processed;</li></ul>
+<ul><li>The purposes of processing;</li></ul>
+<ul><li>The sources from which Personal Information was obtained;</li></ul>
+<ul><li>The categories of recipients with whom Personal Information has been shared;</li></ul>
+<ul><li>The expected retention period;</li></ul>
+<ul><li>The legal basis for processing.</li></ul>
+<p>Shiifa Limited may require reasonable verification of identity before providing access to Personal Information.</p>
+<h3>11.4 Right to Correction</h3>
+<p>Users have the right to request that inaccurate, incomplete or outdated Personal Information be corrected or updated.</p>
+<p>Where reasonably possible, Users may also update certain Account information directly through the PayXchange Platform.</p>
+<p>Shiifa Limited may request supporting documentation where necessary to verify the accuracy of the requested correction.</p>
+<h3>11.5 Right to Deletion</h3>
+<p>Subject to applicable law, Users may request the deletion of certain Personal Information where:</p>
+<ul><li>The information is no longer required for the purposes for which it was collected;</li></ul>
+<ul><li>Consent has been withdrawn and no other lawful basis exists;</li></ul>
+<ul><li>The information has been processed unlawfully;</li></ul>
+<ul><li>Deletion is otherwise required by applicable law.</li></ul>
+<p>Shiifa Limited may decline or defer deletion where retention is necessary to:</p>
+<ul><li>Comply with legal obligations;</li></ul>
+<ul><li>Complete pending Transactions;</li></ul>
+<ul><li>Prevent fraud;</li></ul>
+<ul><li>Resolve disputes;</li></ul>
+<ul><li>Establish, exercise or defend legal claims;</li></ul>
+<ul><li>Satisfy regulatory record-keeping requirements.</li></ul>
+<h3>11.6 Right to Withdraw Consent</h3>
+<p>Where Personal Information is processed on the basis of consent, Users may withdraw that consent at any time.</p>
+<p>Withdrawal of consent:</p>
+<ul><li>Shall not affect the lawfulness of processing carried out before withdrawal;</li></ul>
+<ul><li>May affect the availability of certain optional Services;</li></ul>
+<ul><li>Shall not prevent Shiifa Limited from continuing processing where another lawful basis applies.</li></ul>
+<h3>11.7 Right to Object</h3>
+<p>Where permitted by applicable law, Users may object to certain processing activities, particularly where processing is based on Shiifa Limited&#x27;s legitimate interests.</p>
+<p>Upon receiving such a request, Shiifa Limited shall assess whether compelling lawful grounds exist to continue the processing.</p>
+<p>Where no such grounds exist, the processing shall cease to the extent required by applicable law.</p>
+<h3>11.8 Right to Restrict Processing</h3>
+<p>Where applicable, Users may request that Shiifa Limited temporarily restrict the processing of Personal Information in circumstances including:</p>
+<ul><li>Where the accuracy of the information is contested;</li></ul>
+<ul><li>Where processing is alleged to be unlawful;</li></ul>
+<ul><li>Where the information is required for legal claims;</li></ul>
+<ul><li>Where an objection to processing is under consideration.</li></ul>
+<p>During the restriction period, Personal Information may continue to be stored but shall otherwise be processed only where permitted by law.</p>
+<h3>11.9 Right to Data Portability</h3>
+<p>Where applicable under law and technically feasible, Users may request a copy of certain Personal Information in a structured, commonly used and machine-readable format.</p>
+<p>This right applies only where:</p>
+<ul><li>Processing is based on consent or contract; and</li></ul>
+<ul><li>Processing is carried out by automated means.</li></ul>
+<p>Shiifa Limited reserves the right to apply reasonable technical limitations where permitted by law.</p>
+<h3>11.10 Right to Complain</h3>
+<p>Users who believe that Shiifa Limited has processed their Personal Information unlawfully may:</p>
+<ul><li>Submit a complaint to Shiifa Limited using the contact details provided in this Privacy Policy;</li></ul>
+<ul><li>Request that the matter be reviewed internally;</li></ul>
+<ul><li>Lodge a complaint with the Nigeria Data Protection Commission (NDPC) or another competent</li></ul>
+<p>supervisory authority where permitted by applicable law.</p>
+<p>Shiifa Limited encourages Users to contact it first so that concerns may be investigated and, where appropriate, resolved promptly.</p>
+<h3>11.11 Verification of Requests</h3>
+<p>To protect Personal Information from unauthorized disclosure, Shiifa Limited may require Users to verify their identity before responding to privacy-related requests.</p>
+<p>Verification measures may include:</p>
+<ul><li>Identity confirmation;</li></ul>
+<ul><li>Account authentication;</li></ul>
+<ul><li>Supporting documentation;</li></ul>
+<ul><li>Additional security checks where reasonably necessary.</li></ul>
+<p>Shiifa Limited reserves the right to decline requests where identity cannot be satisfactorily verified.</p>
+<h3>11.12 Limitations on Rights</h3>
+<p>Certain privacy rights may be limited where necessary to:</p>
+<ul><li>Comply with legal obligations;</li></ul>
+<ul><li>Protect national security;</li></ul>
+<ul><li>Prevent financial crime;</li></ul>
+<ul><li>Protect the rights and freedoms of other individuals;</li></ul>
+<ul><li>Maintain the integrity of fraud prevention systems;</li></ul>
+<ul><li>Preserve confidential commercial information;</li></ul>
+<ul><li>Satisfy regulatory requirements applicable to financial institutions.</li></ul>
+<p>Any limitation shall be applied only to the extent permitted by applicable law.</p>
+<h3>11.13 Response Time</h3>
+<p>Shiifa Limited shall make reasonable efforts to acknowledge and respond to valid privacy requests within the timeframes prescribed by applicable law.</p>
+<p>Where additional time is reasonably required due to the complexity or volume of requests, Shiifa Limited may extend the response period where permitted by law and shall notify the User accordingly.</p>
+<h3>11.14 No Discrimination</h3>
+<p>Shiifa Limited shall not unlawfully discriminate against a User for exercising any privacy right available under applicable law.</p>
+<p>However, where the exercise of a particular right makes it impossible to provide certain Services, Shiifa Limited may suspend or discontinue those Services to the extent reasonably necessary.</p>
+<h3>11.15 User Responsibilities</h3>
+<p>Users are responsible for:</p>
+<ul><li>Providing accurate Personal Information;</li></ul>
+<ul><li>Maintaining updated Account information;</li></ul>
+<ul><li>Promptly notifying Shiifa Limited of changes affecting their Personal Information;</li></ul>
+<ul><li>Safeguarding Account credentials;</li></ul>
+<ul><li>Submitting truthful privacy requests.</li></ul>
+<p>Providing false or misleading information may affect Shiifa Limited&#x27;s ability to process a request.</p>
+<h3>11.16 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<ul><li>You have privacy rights under applicable data protection laws;</li></ul>
+<p>b. Shiifa Limited will make reasonable efforts to facilitate the exercise of those rights in accordance with applicable law;</p>
+<ul><li>Certain rights may be subject to legal, regulatory or operational limitations;</li></ul>
+<p>d. Shiifa Limited may require reasonable identity verification before acting on privacy-related requests;</p>
+<p>e. Shiifa Limited remains committed to respecting and protecting your privacy rights while maintaining the security, integrity and lawful operation of the PayXchange Platform.</p>
+<h2>CHAPTER 12: COOKIES, DEVICE IDENTIFIERS AND SIMILAR
+TECHNOLOGIES</h2>
+<h3>12.1 Purpose</h3>
+<p>This Chapter explains how Shiifa Limited uses cookies, mobile device identifiers and similar technologies in connection with the operation of the PayXchange Platform.</p>
+<p>These technologies help provide secure, reliable and efficient Services, improve the performance of the Platform, detect fraudulent activities, remember User preferences and enhance the overall User experience.</p>
+<p>As PayXchange primarily operates as a mobile application, certain technologies described in this Chapter may apply differently depending on whether a User accesses the Platform through the mobile application, website or other digital channels.</p>
+<h3>12.2 What Are Cookies and Similar Technologies?</h3>
+<p>Cookies are small text files stored on a User&#x27;s browser or device when visiting a website.</p>
+<p>Because PayXchange is primarily a mobile application, Shiifa Limited may also use technologies functionally similar to cookies, including:</p>
+<ul><li>Device identifiers;</li></ul>
+<ul><li>Application identifiers;</li></ul>
+<ul><li>Authentication tokens;</li></ul>
+<ul><li>Software development kits (SDKs);</li></ul>
+<ul><li>Local device storage;</li></ul>
+<ul><li>Secure session identifiers;</li></ul>
+<ul><li>Application preferences;</li></ul>
+<ul><li>Similar technologies that support Platform functionality.</li></ul>
+<p>For the purposes of this Privacy Policy, these technologies are collectively referred to as &quot;Cookies and Similar Technologies.&quot;</p>
+<h3>12.3 Types of Technologies We Use</h3>
+<p>Shiifa Limited may use the following categories of technologies:</p>
+<p>(a) Essential Technologies</p>
+<p>These technologies are necessary for the operation of the Platform. They may be used to:</p>
+<ul><li>Authenticate Users;</li></ul>
+<ul><li>Maintain secure login sessions;</li></ul>
+<ul><li>Protect User Accounts;</li></ul>
+<ul><li>Process Transactions;</li></ul>
+<ul><li>Prevent unauthorized access;</li></ul>
+<ul><li>Ensure system reliability.</li></ul>
+<p>Without these technologies, certain Services may not function properly.</p>
+<p>(b) Security Technologies</p>
+<p>Security technologies help protect both Users and the Platform. They may be used to:</p>
+<ul><li>Detect suspicious activities;</li></ul>
+<ul><li>Prevent fraud;</li></ul>
+<ul><li>Identify unusual login behaviour;</li></ul>
+<ul><li>Recognize trusted devices;</li></ul>
+<ul><li>Secure payment Transactions;</li></ul>
+<ul><li>Monitor attempted cyberattacks.</li></ul>
+<p>(c) Performance Technologies</p>
+<p>Performance technologies help Shiifa Limited understand how the Platform operates by collecting information relating to:</p>
+<ul><li>Application performance;</li></ul>
+<ul><li>System responsiveness;</li></ul>
+<ul><li>Technical errors;</li></ul>
+<ul><li>Crash reports;</li></ul>
+<ul><li>Service availability;</li></ul>
+<ul><li>Loading times.</li></ul>
+<p>This information assists in improving the stability and efficiency of the Platform.</p>
+<p>(d) Functional Technologies</p>
+<p>Functional technologies allow the Platform to remember User preferences, including:</p>
+<ul><li>Language settings;</li></ul>
+<ul><li>Accessibility preferences;</li></ul>
+<ul><li>Notification preferences;</li></ul>
+<ul><li>Preferred authentication methods;</li></ul>
+<ul><li>Previously selected options.</li></ul>
+<p>These technologies improve convenience without fundamentally altering the operation of the Platform.</p>
+<p>(e) Analytics Technologies</p>
+<p>Where permitted by applicable law, Shiifa Limited may use analytics technologies to better understand how Users interact with the Platform.</p>
+<p>Analytics information may include:</p>
+<ul><li>Feature usage;</li></ul>
+<ul><li>Navigation behaviour;</li></ul>
+<ul><li>Session duration;</li></ul>
+<ul><li>Transaction trends;</li></ul>
+<ul><li>User engagement;</li></ul>
+<ul><li>System performance.</li></ul>
+<p>Where practicable, analytics information shall be aggregated or anonymized.</p>
+<h3>12.4 Information Collected Through These Technologies</h3>
+<p>Cookies and Similar Technologies may collect information including:</p>
+<ul><li>Device identifiers;</li></ul>
+<ul><li>IP address;</li></ul>
+<ul><li>Browser type (where applicable);</li></ul>
+<ul><li>Operating system;</li></ul>
+<ul><li>Application version;</li></ul>
+<ul><li>Device model;</li></ul>
+<ul><li>Session identifiers;</li></ul>
+<ul><li>Login timestamps;</li></ul>
+<ul><li>Language preferences;</li></ul>
+<ul><li>Network information;</li></ul>
+<ul><li>Diagnostic information;</li></ul>
+<ul><li>Application usage information.</li></ul>
+<p>These technologies are not intended to collect more Personal Information than is reasonably necessary for the purposes described in this Privacy Policy.</p>
+<h3>12.5 Purposes for Using Cookies and Similar Technologies</h3>
+<p>Shiifa Limited uses these technologies for purposes including:</p>
+<ul><li>Maintaining secure login sessions;</li></ul>
+<ul><li>Authenticating Users;</li></ul>
+<ul><li>Facilitating payment Transactions;</li></ul>
+<ul><li>Improving Platform performance;</li></ul>
+<ul><li>Detecting fraud;</li></ul>
+<ul><li>Enhancing cybersecurity;</li></ul>
+<ul><li>Remembering User preferences;</li></ul>
+<ul><li>Improving customer experience;</li></ul>
+<ul><li>Troubleshooting technical issues;</li></ul>
+<ul><li>Monitoring Platform reliability;</li></ul>
+<ul><li>Supporting business continuity.</li></ul>
+<h3>12.6 Third-Party Technologies</h3>
+<p>Certain Licensed Partners or trusted service providers may use Cookies and Similar Technologies where necessary to provide services to PayXchange.</p>
+<p>Such parties may include providers of:</p>
+<ul><li>Cloud infrastructure;</li></ul>
+<ul><li>Cybersecurity services;</li></ul>
+<ul><li>Fraud detection systems;</li></ul>
+<ul><li>Payment infrastructure;</li></ul>
+<ul><li>Analytics services;</li></ul>
+<ul><li>Customer support technologies.</li></ul>
+<p>Shiifa Limited requires such providers to process information only for authorized purposes and in accordance with applicable contractual obligations.</p>
+<h3>12.7 Managing Cookies and Device Permissions</h3>
+<p>Users may control certain technologies through:</p>
+<ul><li>Browser settings (where accessing the website);</li></ul>
+<ul><li>Mobile device privacy settings;</li></ul>
+<ul><li>Application permission settings;</li></ul>
+<ul><li>Operating system controls.</li></ul>
+<p>However, disabling certain essential technologies may limit or prevent access to some PayXchange Services, including secure authentication and payment functionality.</p>
+<h3>12.8 Mobile Device Permissions</h3>
+<p>Depending on the features used, PayXchange may request permission to access certain device capabilities, including:</p>
+<ul><li>Camera access for QR or NQR payments and identity verification;</li></ul>
+<ul><li>Biometric authentication features, where supported;</li></ul>
+<ul><li>Notifications for transaction alerts and security messages;</li></ul>
+<ul><li>Location information, where necessary for fraud prevention or other lawful purposes.</li></ul>
+<p>Permissions requested by the Platform are limited to those reasonably necessary for the provision, security and improvement of the Services.</p>
+<p>Users may withdraw certain permissions through their device settings, although doing so may affect the availability or functionality of specific Services.</p>
+<h3>12.9 Advertising</h3>
+<p>At the Effective Date of this Privacy Policy, PayXchange does not use Personal Information collected through Cookies and Similar Technologies for third-party behavioural advertising.</p>
+<p>Should Shiifa Limited introduce advertising or promotional technologies in the future, Users will be notified through an updated Privacy Policy where required by applicable law.</p>
+<h3>12.10 Security of Stored Information</h3>
+<p>Information collected through Cookies and Similar Technologies is protected using appropriate technical and organizational safeguards consistent with Shiifa Limited&#x27;s information security programme.</p>
+<p>Such safeguards may include:</p>
+<ul><li>Encryption;</li></ul>
+<ul><li>Secure storage;</li></ul>
+<ul><li>Access controls;</li></ul>
+<ul><li>Authentication measures;</li></ul>
+<ul><li>Security monitoring;</li></ul>
+<ul><li>Audit logging.</li></ul>
+<h3>12.11 Changes to Technologies</h3>
+<p>As technology evolves, Shiifa Limited may introduce additional Cookies or Similar Technologies to improve the security, functionality and efficiency of the Platform.</p>
+<p>Where such changes materially affect the processing of Personal Information, Shiifa Limited shall update this Privacy Policy and notify Users where required by applicable law.</p>
+<h3>12.12 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited uses Cookies, device identifiers and Similar Technologies to support the secure and efficient operation of the Platform;</p>
+<p>b. These technologies assist in authentication, fraud prevention, payment processing, performance monitoring and service improvement;</p>
+<p>c. Certain essential technologies are necessary for the proper functioning of the Platform and cannot be disabled without affecting core Services;</p>
+<p>d. Users may manage certain permissions and settings through their devices or browsers, subject to the operational requirements of the Platform;</p>
+<p>e. Shiifa Limited uses these technologies responsibly and in accordance with this Privacy Policy and applicable data protection laws.</p>
+<h2>CHAPTER 13: CHILDREN&#x27;S PRIVACY</h2>
+<h3>13.1 Purpose</h3>
+<p>This Chapter explains Shiifa Limited&#x27;s approach to the collection, processing and protection of Personal Information relating to children.</p>
+<p>PayXchange is designed as a financial technology platform for individuals and businesses who are legally capable of entering into binding agreements and using regulated financial services.</p>
+<p>Shiifa Limited recognizes the importance of protecting the privacy of children and is committed to complying with applicable laws governing the processing of children&#x27;s Personal Information.</p>
+<h3>13.2 Intended Users of the Platform</h3>
+<p>The PayXchange Platform is intended for use by:</p>
+<ul><li>Individuals who have attained the legal age required to operate financial accounts under</li></ul>
+<p>applicable law;</p>
+<ul><li>Legally recognized businesses;</li></ul>
+<ul><li>Authorized representatives of businesses;</li></ul>
+<ul><li>Other persons legally permitted to use the Services.</li></ul>
+<p>The Platform is not intentionally designed or marketed for use by young children.</p>
+<h3>13.3 Collection of Children&#x27;s Personal Information</h3>
+<p>Shiifa Limited does not knowingly collect Personal Information directly from children in violation of applicable law.</p>
+<p>Where the Platform requires identity verification through Know Your Customer (KYC) procedures, Users must provide accurate information confirming their eligibility to use the Services.</p>
+<h3>13.4 Accounts Created by Minors</h3>
+<p>If Shiifa Limited becomes aware that a User has created or is operating a PayXchange Account while not legally eligible to do so, Shiifa Limited may, without prior notice:</p>
+<ul><li>Suspend the Account;</li></ul>
+<ul><li>Restrict access to the Services;</li></ul>
+<ul><li>Request additional identity verification;</li></ul>
+<ul><li>Require parental or legal guardian documentation where permitted by law;</li></ul>
+<ul><li>Close the Account where necessary;</li></ul>
+<ul><li>Retain information where required by law or regulatory obligations.</li></ul>
+<p>Such actions are intended to protect the child, comply with applicable regulations and safeguard the integrity of the Platform.</p>
+<h3>13.5 Accidental Collection of Children&#x27;s Personal Information</h3>
+<p>Despite reasonable verification measures, Shiifa Limited acknowledges that Personal Information relating to a child may occasionally be provided inadvertently.</p>
+<p>Where Shiifa Limited becomes aware that such information has been collected unlawfully, it shall take reasonable steps to:</p>
+<ul><li>Investigate the circumstances;</li></ul>
+<ul><li>Restrict further processing where appropriate;</li></ul>
+<ul><li>Delete the information where legally permissible;</li></ul>
+<ul><li>Retain only information required by applicable law;</li></ul>
+<ul><li>Notify a parent or legal guardian where required by law.</li></ul>
+<h3>13.6 Parental or Guardian Requests</h3>
+<p>Where permitted under applicable law, a parent or legal guardian may contact Shiifa Limited to:</p>
+<ul><li>Inquire whether Personal Information relating to their child has been collected;</li></ul>
+<ul><li>Request correction of inaccurate information;</li></ul>
+<ul><li>Request deletion of information where legally permissible;</li></ul>
+<ul><li>Raise concerns regarding the processing of a child&#x27;s Personal Information.</li></ul>
+<p>Shiifa Limited may require reasonable verification of the identity and legal authority of the requesting parent or guardian before acting on such requests.</p>
+<h3>13.7 Educational or Youth Programs</h3>
+<p>If Shiifa Limited introduces products or services specifically intended for educational institutions, youth programmes or individuals below the ordinary eligibility age, this Privacy Policy may be supplemented by additional privacy notices or terms appropriate to those services.</p>
+<p>Any such processing shall be conducted in accordance with applicable law and appropriate safeguards.</p>
+<h3>13.8 Identity Verification Measures</h3>
+<p>To reduce the likelihood of underage use of the Platform, Shiifa Limited and its Licensed Partners may implement identity verification measures including:</p>
+<ul><li>Know Your Customer (KYC) procedures;</li></ul>
+<ul><li>Age verification through government-issued identification;</li></ul>
+<ul><li>Bank Verification Number (BVN) verification;</li></ul>
+<ul><li>National Identification Number (NIN) verification, where applicable;</li></ul>
+<ul><li>Facial verification;</li></ul>
+<ul><li>Liveness detection;</li></ul>
+<ul><li>Additional verification measures required under applicable law.</li></ul>
+<p>These measures assist in ensuring that the Platform is used only by eligible individuals.</p>
+<h3>13.9 Protection of Children&#x27;s Personal Information</h3>
+<p>Where Shiifa Limited lawfully processes Personal Information relating to a child, such information shall receive the same level of protection as other Personal Information processed through the Platform.</p>
+<p>Additional safeguards may be implemented where required by applicable law or where the sensitivity of the information warrants enhanced protection.</p>
+<h3>13.10 Regulatory Compliance</h3>
+<p>Shiifa Limited shall process any Personal Information relating to children in accordance with:</p>
+<ul><li>The Nigeria Data Protection Act, 2023 (NDPA);</li></ul>
+<ul><li>Applicable child protection laws;</li></ul>
+<ul><li>Financial sector regulations;</li></ul>
+<ul><li>Lawful regulatory directives;</li></ul>
+<ul><li>Other applicable legislation governing children&#x27;s privacy.</li></ul>
+<h3>13.11 Future Services</h3>
+<p>If PayXchange introduces products or financial services specifically intended for younger users in the future, Shiifa Limited shall review and update this Privacy Policy to ensure that appropriate privacy protections and parental consent mechanisms are implemented where required by law.</p>
+<h3>13.12 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. The Platform is intended primarily for individuals who are legally eligible to use regulated financial services;</p>
+<p>b. Shiifa Limited does not knowingly collect Personal Information from children in violation of applicable law;</p>
+<p>c. Where Shiifa Limited becomes aware of unlawful collection of a child&#x27;s Personal Information, appropriate corrective measures may be taken;</p>
+<p>d. Parents and legal guardians may contact Shiifa Limited regarding the processing of a child&#x27;s Personal Information where permitted by applicable law;</p>
+<p>e. Shiifa Limited remains committed to protecting the privacy and Personal Information of children in accordance with applicable laws and regulatory requirements.</p>
+<h2>CHAPTER 14: CHANGES TO THIS PRIVACY POLICY</h2>
+<h3>14.1 Purpose</h3>
+<p>This Chapter explains how Shiifa Limited may amend, revise or update this Privacy Policy from time to time.</p>
+<p>As PayXchange evolves, applicable laws change and new technologies are introduced, Shiifa Limited may find it necessary to modify this Privacy Policy to accurately reflect its data processing practices and legal obligations.</p>
+<p>Shiifa Limited is committed to maintaining transparency whenever material changes are made.</p>
+<h3>14.2 Right to Amend</h3>
+<p>Shiifa Limited reserves the right to amend, update, replace or revise this Privacy Policy at any time where reasonably necessary, including to:</p>
+<ul><li>Comply with changes in applicable laws or regulations;</li></ul>
+<ul><li>Reflect changes to the PayXchange Platform;</li></ul>
+<ul><li>Introduce new products or services;</li></ul>
+<ul><li>Incorporate additional Licensed Partners;</li></ul>
+<ul><li>Improve privacy practices;</li></ul>
+<ul><li>Enhance security measures;</li></ul>
+<ul><li>Address operational or technological developments;</li></ul>
+<ul><li>Clarify existing provisions.</li></ul>
+<h3>14.3 Material Changes</h3>
+<p>Material changes may include, but are not limited to:</p>
+<ul><li>Changes in the categories of Personal Information collected;</li></ul>
+<ul><li>Changes in the purposes for processing Personal Information;</li></ul>
+<ul><li>Changes in Users&#x27; privacy rights;</li></ul>
+<ul><li>Changes affecting international data transfers;</li></ul>
+<ul><li>Changes to security practices;</li></ul>
+<ul><li>Changes to data retention practices;</li></ul>
+<ul><li>Changes involving Licensed Partners or payment infrastructure;</li></ul>
+<ul><li>Changes required by law or regulatory authorities.</li></ul>
+<p>Where required by applicable law, Shiifa Limited shall provide appropriate notice before material changes become effective.</p>
+<h3>14.4 Non-Material Changes</h3>
+<p>Shiifa Limited may also make non-material changes to improve the clarity, readability or organization of this Privacy Policy.</p>
+<p>Examples include:</p>
+<ul><li>Correcting typographical errors;</li></ul>
+<ul><li>Updating formatting;</li></ul>
+<ul><li>Improving language for clarity;</li></ul>
+<ul><li>Updating internal references;</li></ul>
+<ul><li>Reflecting administrative changes that do not materially affect Users&#x27; privacy rights.</li></ul>
+<p>Such changes may become effective immediately upon publication.</p>
+<h3>14.5 Notification of Changes</h3>
+<p>Where appropriate, Shiifa Limited may notify Users of updates to this Privacy Policy through one or more of the following methods:</p>
+<ul><li>Notifications within the PayXchange Platform;</li></ul>
+<ul><li>Email communications;</li></ul>
+<ul><li>Updates on the official PayXchange website;</li></ul>
+<ul><li>In-application messages;</li></ul>
+<ul><li>Push notifications;</li></ul>
+<ul><li>Other communication channels reasonably calculated to bring the changes to Users&#x27; attention.</li></ul>
+<p>The method of notification may depend on the significance of the changes and applicable legal requirements.</p>
+<h3>14.6 Effective Date of Changes</h3>
+<p>Each version of this Privacy Policy shall indicate its effective date.</p>
+<p>Unless otherwise stated, revisions become effective on the date specified in the updated Privacy Policy.</p>
+<p>Where applicable law requires advance notice or consent before certain changes take effect, Shiifa Limited shall comply with those legal requirements.</p>
+<h3>14.7 Continued Use of the Platform</h3>
+<p>Following the effective date of an updated Privacy Policy, continued access to or use of the PayXchange Platform may constitute acknowledgement of the revised Privacy Policy, to the extent permitted by applicable law.</p>
+<p>Where applicable law requires express consent for particular changes, Shiifa Limited shall obtain such consent before relying upon the updated provisions.</p>
+<h3>14.8 User Responsibility</h3>
+<p>Users are encouraged to periodically review this Privacy Policy to remain informed about how Shiifa Limited collects, uses, protects and shares Personal Information.</p>
+<p>Failure to review updated versions of this Privacy Policy does not prevent revised provisions from applying where legally effective.</p>
+<h3>14.9 Historical Versions</h3>
+<p>Shiifa Limited may retain previous versions of this Privacy Policy for:</p>
+<ul><li>Regulatory compliance;</li></ul>
+<ul><li>Internal record-keeping;</li></ul>
+<ul><li>Audit purposes;</li></ul>
+<ul><li>Legal proceedings;</li></ul>
+<ul><li>Historical reference.</li></ul>
+<p>Users may request information regarding previous versions where required by applicable law.</p>
+<h3>14.10 Changes Required by Law</h3>
+<p>Where amendments are necessary to comply with:</p>
+<ul><li>The Nigeria Data Protection Act (NDPA);</li></ul>
+<ul><li>Directives issued by the Nigeria Data Protection Commission (NDPC);</li></ul>
+<ul><li>Central Bank of Nigeria (CBN) regulations;</li></ul>
+<ul><li>Court decisions;</li></ul>
+<ul><li>Other applicable laws or regulatory requirements,</li></ul>
+<p>Shiifa Limited may implement such changes as required to maintain legal compliance.</p>
+<h3>14.11 Future Expansion of Services</h3>
+<p>As PayXchange introduces new payment services, technologies or partnerships, Shiifa Limited may revise this Privacy Policy to address:</p>
+<ul><li>Additional payment features;</li></ul>
+<ul><li>New financial products;</li></ul>
+<ul><li>Enhanced identity verification processes;</li></ul>
+<ul><li>Expanded QR/NQR capabilities;</li></ul>
+<ul><li>Cross-border payment services;</li></ul>
+<ul><li>Additional Wallet or Virtual Account functionalities;</li></ul>
+<ul><li>Future Direct Debit enhancements;</li></ul>
+<ul><li>Other innovations introduced to the Platform.</li></ul>
+<h3>14.12 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. Shiifa Limited may amend this Privacy Policy from time to time to reflect changes in law, technology, business operations or the Services provided;</p>
+<p>b. Material changes will be communicated through appropriate channels where required by applicable law;</p>
+<p>c. Users are encouraged to review this Privacy Policy periodically to remain informed about how their Personal Information is processed;</p>
+<p>d. Continued use of the PayXchange Platform after the effective date of an updated Privacy Policy may constitute acceptance of the revised Privacy Policy, to the extent permitted by applicable law;</p>
+<p>e. Shiifa Limited remains committed to transparency and compliance whenever changes to this Privacy Policy are made.</p>
+<h2>CHAPTER 15: CONTACT INFORMATION, COMPLAINTS AND DATA
+PROTECTION ENQUIRIES</h2>
+<h3>15.1 Purpose</h3>
+<p>This Chapter explains how Users may contact Shiifa Limited regarding this Privacy Policy, their Personal Information or any privacy-related concerns.</p>
+<p>Shiifa Limited is committed to handling privacy enquiries, complaints and requests in a fair, transparent and timely manner. Users are encouraged to contact Shiifa Limited directly so that concerns may be investigated and, where appropriate, resolved efficiently.</p>
+<h3>15.2 Contact Details</h3>
+<p>At the Effective Date of this Privacy Policy, Users may contact Shiifa Limited using the following details:</p>
+<p>Company Name: Shiifa Limited RC Number:</p>
+<p>PayXchange Support Email: schiiphatech@gmail.com</p>
+<p>As the PayXchange Platform develops, Shiifa Limited may publish additional contact channels, including a customer support telephone number, website, mobile application support centre or dedicated privacy contact.</p>
+<p>Updated contact information will be made available through the official PayXchange communication channels.</p>
+<h3>15.3 Privacy Enquiries</h3>
+<p>Users may contact Shiifa Limited regarding matters including:</p>
+<ul><li>This Privacy Policy;</li></ul>
+<ul><li>Collection of Personal Information;</li></ul>
+<ul><li>Processing activities;</li></ul>
+<ul><li>Data security;</li></ul>
+<ul><li>Data retention;</li></ul>
+<ul><li>International data transfers;</li></ul>
+<ul><li>Privacy rights;</li></ul>
+<ul><li>Identity verification procedures;</li></ul>
+<ul><li>Any other privacy-related questions.</li></ul>
+<p>Shiifa Limited will make reasonable efforts to respond to enquiries within the timeframes required by applicable law.</p>
+<h3>15.4 Privacy Requests</h3>
+<p>Users may submit requests relating to their Personal Information, including requests to:</p>
+<ul><li>Access Personal Information;</li></ul>
+<ul><li>Correct inaccurate information;</li></ul>
+<ul><li>Update Account information;</li></ul>
+<ul><li>Request deletion where legally permissible;</li></ul>
+<ul><li>Withdraw consent where applicable;</li></ul>
+<ul><li>Object to certain processing activities;</li></ul>
+<ul><li>Restrict processing where permitted by law;</li></ul>
+<ul><li>Obtain information regarding data processing activities.</li></ul>
+<p>Requests should contain sufficient information to enable Shiifa Limited to identify the relevant User and assess the request.</p>
+<h3>15.5 Identity Verification</h3>
+<p>Before responding to privacy requests, Shiifa Limited may require reasonable verification of the requester&#x27;s identity.</p>
+<p>Verification measures may include:</p>
+<ul><li>Authentication through the PayXchange Platform;</li></ul>
+<ul><li>Confirmation of registered contact information;</li></ul>
+<ul><li>Submission of identification documents where appropriate;</li></ul>
+<ul><li>Additional security questions;</li></ul>
+<ul><li>Any other reasonable verification procedures necessary to protect Personal Information.</li></ul>
+<p>Shiifa Limited reserves the right to decline requests where identity cannot be adequately verified.</p>
+<h3>15.6 Complaints</h3>
+<p>Users who believe that Shiifa Limited has processed their Personal Information in a manner inconsistent with this Privacy Policy or applicable law may submit a complaint.</p>
+<p>Complaints should, where possible, include:</p>
+<ul><li>The User&#x27;s full name;</li></ul>
+<ul><li>Registered contact information;</li></ul>
+<ul><li>A description of the issue;</li></ul>
+<ul><li>Relevant dates;</li></ul>
+<ul><li>Supporting information or documentation, where available;</li></ul>
+<ul><li>The outcome sought by the User.</li></ul>
+<p>Shiifa Limited shall investigate complaints fairly and objectively.</p>
+<h3>15.7 Investigation of Complaints</h3>
+<p>Upon receiving a complaint, Shiifa Limited may:</p>
+<ul><li>Acknowledge receipt of the complaint;</li></ul>
+<ul><li>Request additional information where necessary;</li></ul>
+<ul><li>Investigate the relevant circumstances;</li></ul>
+<ul><li>Consult with Licensed Partners where appropriate;</li></ul>
+<ul><li>Review applicable records;</li></ul>
+<ul><li>Communicate the outcome of the investigation to the User.</li></ul>
+<p>Where corrective action is appropriate, Shiifa Limited shall take reasonable steps to implement such action.</p>
+<h3>15.8 Escalation to Regulatory Authorities</h3>
+<p>If a User remains dissatisfied after Shiifa Limited has concluded its internal review, the User may, where permitted by applicable law, refer the matter to the appropriate supervisory authority, including the Nigeria Data Protection Commission (NDPC) or any other competent regulatory authority having jurisdiction over the matter.</p>
+<p>Nothing in this Privacy Policy limits any statutory rights available to Users under applicable law.</p>
+<h3>15.9 Communications</h3>
+<p>Shiifa Limited may communicate with Users regarding privacy matters through:</p>
+<ul><li>Email;</li></ul>
+<ul><li>In-application notifications;</li></ul>
+<ul><li>Push notifications;</li></ul>
+<ul><li>Official website notices;</li></ul>
+<ul><li>Other communication channels reasonably appropriate under the circumstances.</li></ul>
+<p>Users are responsible for ensuring that their registered contact information remains accurate and up to date.</p>
+<h3>15.10 Availability of this Privacy Policy</h3>
+<p>The current version of this Privacy Policy shall be made available through appropriate PayXchange channels, including, where applicable:</p>
+<ul><li>The PayXchange mobile application;</li></ul>
+<ul><li>The official PayXchange website;</li></ul>
+<ul><li>Onboarding materials;</li></ul>
+<ul><li>Other official communication platforms.</li></ul>
+<p>Previous versions may be retained for legal, regulatory or audit purposes.</p>
+<h3>15.11 Appointment of a Data Protection Officer</h3>
+<p>At the Effective Date of this Privacy Policy, Shiifa Limited has not yet appointed a dedicated Data Protection Officer (DPO).</p>
+<p>As the organization expands and where required by applicable law or business needs, Shiifa Limited may appoint a Data Protection Officer or another designated privacy representative.</p>
+<p>Any such appointment and the relevant contact details shall be reflected in an updated version of this Privacy Policy.</p>
+<h3>15.12 Future Contact Channels</h3>
+<p>Shiifa Limited may introduce additional communication channels, including:</p>
+<ul><li>Customer service telephone numbers;</li></ul>
+<ul><li>Dedicated legal contact addresses;</li></ul>
+<ul><li>Online privacy request portals;</li></ul>
+<ul><li>Live chat support;</li></ul>
+<ul><li>Dedicated compliance email addresses.</li></ul>
+<p>Users should rely only on contact information published through official PayXchange channels.</p>
+<h3>15.13 Good Faith Communications</h3>
+<p>Users are expected to submit privacy requests and complaints honestly and in good faith.</p>
+<p>Shiifa Limited reserves the right to decline or limit responses to:</p>
+<ul><li>Fraudulent requests;</li></ul>
+<ul><li>Abusive communications;</li></ul>
+<ul><li>Repetitive requests lacking reasonable grounds;</li></ul>
+<ul><li>Requests prohibited by law.</li></ul>
+<p>Such limitations shall be applied only where permitted by applicable law.</p>
+<h3>15.14 User Acknowledgement</h3>
+<p>By using PayXchange, you acknowledge and agree that:</p>
+<p>a. You may contact Shiifa Limited regarding any questions or concerns relating to this Privacy Policy or your Personal Information;</p>
+<p>b. Shiifa Limited may require reasonable identity verification before responding to privacy-related requests;</p>
+<p>c. Privacy complaints will be investigated fairly and in accordance with applicable legal requirements;</p>
+<p>d. Where a complaint cannot be resolved internally, you may have the right to refer the matter to the Nigeria Data Protection Commission (NDPC) or another competent authority;</p>
+<p>e. Shiifa Limited remains committed to maintaining open, transparent and effective communication regarding privacy matters.</p>
+<h2>CHAPTER 16: FINAL PROVISIONS</h2>
+<h3>16.1 Purpose</h3>
+<p>This Chapter contains the final legal provisions governing the interpretation, application and administration of this Privacy Policy.</p>
+<p>These provisions are intended to ensure that this Privacy Policy remains legally effective, enforceable and consistent with applicable laws while supporting the continued operation of the PayXchange Platform.</p>
+<h3>16.2 Governing Law</h3>
+<p>This Privacy Policy shall be governed by and interpreted in accordance with the laws of the Federal Republic of Nigeria, including but not limited to:</p>
+<ul><li>The Nigeria Data Protection Act, 2023 (NDPA);</li></ul>
+<ul><li>Regulations, guidelines and directives issued by the Nigeria Data Protection Commission</li></ul>
+<p>(NDPC);</p>
+<ul><li>Applicable regulations issued by the Central Bank of Nigeria (CBN);</li></ul>
+<ul><li>Other applicable Nigerian laws governing privacy, electronic communications, financial services</li></ul>
+<p>and consumer protection.</p>
+<p>Nothing in this Privacy Policy shall be interpreted as limiting any statutory rights available to Users under applicable law.</p>
+<h3>16.3 Interpretation</h3>
+<p>In interpreting this Privacy Policy:</p>
+<ul><li>Headings are included for convenience only and do not affect interpretation;</li></ul>
+<ul><li>References to legislation include amendments, replacements and successor legislation;</li></ul>
+<ul><li>Words importing the singular include the plural, and vice versa, where the context requires;</li></ul>
+<ul><li>References to one gender include all genders;</li></ul>
+<ul><li>References to &quot;including&quot; or similar expressions shall be interpreted as &quot;including without</li></ul>
+<p>limitation.&quot;</p>
+<h3>16.4 Severability</h3>
+<p>If any provision of this Privacy Policy is determined by a court of competent jurisdiction or another competent authority to be invalid, unlawful or unenforceable, that provision shall, to the extent necessary, be severed from this Privacy Policy.</p>
+<p>The remaining provisions shall continue in full force and effect to the fullest extent permitted by applicable law.</p>
+<h3>16.5 No Waiver</h3>
+<p>Failure or delay by Shiifa Limited to exercise any right or remedy under this Privacy Policy shall not constitute a waiver of that right or remedy.</p>
+<p>Any waiver shall be effective only if made expressly in writing by Shiifa Limited.</p>
+<p>A waiver of any particular right shall not constitute a waiver of any other right or any future exercise of the same right.</p>
+<h3>16.6 Entire Privacy Policy</h3>
+<p>This Privacy Policy constitutes the complete statement of Shiifa Limited&#x27;s privacy practices relating to the PayXchange Platform as of its Effective Date.</p>
+<p>It should be read together with:</p>
+<ul><li>The PayXchange Terms and Conditions;</li></ul>
+<ul><li>Any additional privacy notices published by Shiifa Limited;</li></ul>
+<ul><li>Any supplementary notices relating to specific PayXchange products or services.</li></ul>
+<p>Where inconsistencies arise, any mandatory requirements imposed by applicable law shall prevail.</p>
+<h3>16.7 Compliance with Applicable Law</h3>
+<p>Shiifa Limited intends to operate the PayXchange Platform in compliance with applicable legal and regulatory requirements.</p>
+<p>Where any provision of this Privacy Policy conflicts with a mandatory legal obligation, Shiifa Limited shall interpret and apply this Privacy Policy in a manner consistent with applicable law.</p>
+<p>Nothing in this Privacy Policy shall be interpreted as permitting conduct prohibited by law.</p>
+<h3>16.8 Assignment</h3>
+<p>Shiifa Limited may assign or transfer its rights and obligations under this Privacy Policy as part of:</p>
+<ul><li>A merger;</li></ul>
+<ul><li>Acquisition;</li></ul>
+<ul><li>Corporate restructuring;</li></ul>
+<ul><li>Transfer of business operations;</li></ul>
+<ul><li>Sale of assets;</li></ul>
+<ul><li>Other lawful corporate transactions.</li></ul>
+<p>Where required by applicable law, Users shall be notified of such changes.</p>
+<h3>16.9 Relationship with Licensed Partners</h3>
+<p>PayXchange provides payment facilitation services through regulated financial infrastructure operated by Licensed Partners.</p>
+<p>Accordingly:</p>
+<ul><li>Certain Personal Information may also be processed by Licensed Partners in accordance with</li></ul>
+<p>their own privacy policies and legal obligations;</p>
+<ul><li>This Privacy Policy governs the processing activities carried out by Shiifa Limited in connection</li></ul>
+<p>with the PayXchange Platform;</p>
+<ul><li>Users may also be subject to the privacy policies and terms of Licensed Partners where their</li></ul>
+<p>services are utilized.</p>
+<p>At the Effective Date of this Privacy Policy, Nomba serves as PayXchange&#x27;s primary Licensed Partner.</p>
+<h3>16.10 Survival</h3>
+<p>The provisions of this Privacy Policy that by their nature are intended to survive the closure of a User Account or termination of the Services shall continue in effect after such closure or termination.</p>
+<p>These include, without limitation, provisions relating to:</p>
+<ul><li>Data retention;</li></ul>
+<ul><li>Legal compliance;</li></ul>
+<ul><li>Regulatory reporting;</li></ul>
+<ul><li>Dispute resolution;</li></ul>
+<ul><li>Fraud prevention;</li></ul>
+<ul><li>Confidentiality;</li></ul>
+<ul><li>Limitation of liability where applicable.</li></ul>
+<h3>16.11 Effective Date</h3>
+<p>This Privacy Policy becomes effective on 3 July 2026 and shall remain in effect until amended or replaced by Shiifa Limited in accordance with Chapter 14 (Changes to this Privacy Policy).</p>
+<p>The version number and effective date shall be updated whenever material revisions are made.</p>
+<h3>16.12 Final User Acknowledgement</h3>
+<p>By creating a PayXchange Account, accessing or using the PayXchange Platform, you acknowledge and agree that:</p>
+<ul><li>You have read and understood this Privacy Policy;</li></ul>
+<p>b. You understand how Shiifa Limited collects, uses, stores, protects and shares your Personal Information;</p>
+<ul><li>You understand your rights regarding your Personal Information under applicable law;</li></ul>
+<p>d. You acknowledge that certain Personal Information may be processed by Licensed Partners where necessary to provide the Services;</p>
+<p>e. You agree that Shiifa Limited may process your Personal Information in accordance with this Privacy Policy and applicable law;</p>
+<p>f. Where your consent is required under applicable law, such consent shall be obtained before the relevant processing activity is undertaken;</p>
+<p>g. If you do not agree with this Privacy Policy, you should discontinue use of the PayXchange Platform.</p>
+<h2>CONCLUSION</h2>
+<p>Shiifa Limited appreciates the trust placed in PayXchange by its Users.</p>
+<p>Protecting the privacy, confidentiality and security of Personal Information is fundamental to the operation of the Platform. Shiifa Limited remains committed to maintaining high standards of data protection, transparency, accountability and regulatory compliance while continuously improving its payment services.</p>
+<p>As PayXchange evolves, Shiifa Limited will continue to review and enhance its privacy practices to ensure that Users&#x27; Personal Information is handled responsibly, securely and in accordance with applicable laws and internationally recognized privacy principles.</p>
+<div class="notice">This page presents the PayXchange Privacy Policy published by Shiifa Limited. Version 1.0 — effective 3 July 2026.</div>
+</div></div>
+
 
 <script type="text/babel">
 const {useState,useEffect,useRef} = React;
@@ -623,7 +2587,7 @@ function Footer(){
         </div>
         <div className="fcol"><h4>Product</h4><a href="#features">Features</a><a href="#how">How it works</a><a href="#security">Security</a><a href="#get">Get the app</a></div>
         <div className="fcol"><h4>Company</h4><a href="#">About Shifa Ltd</a><a href="mailto:hello@payxchange.app">Contact</a><a href="#contact">Our address</a><a href="#faq">FAQ</a></div>
-        <div className="fcol"><h4>Legal</h4><a href="#">Privacy Policy<span className="soon-tag">Soon</span></a><a href="#">Terms of Service<span className="soon-tag">Soon</span></a></div>
+        <div className="fcol"><h4>Legal</h4><a href="#/privacy-policy">Privacy Policy</a><a href="#">Terms of Service<span className="soon-tag">Soon</span></a></div>
       </div>
       <div className="foot-bottom">
         <span>© 2026 Shifa Ltd. PayXchange is a product of Shifa Ltd. All rights reserved.</span>
@@ -815,7 +2779,25 @@ function AdminRoot(){
     : <AdminLogin onAuthed={setToken}/>;
 }
 
-// Minimal hash router: '#/admin' → admin area, anything else → landing page.
+function PrivacyPolicy(){
+  const content = document.getElementById("payxchange-privacy-content");
+  return (
+    <div className="privacy-page">
+      <header className="privacy-top">
+        <div className="privacy-nav">
+          <a className="privacy-brand" href="#/"><span className="privacy-badge">PX</span>PayXchange</a>
+          <a className="privacy-back" href="#/">← Back to PayXchange</a>
+        </div>
+      </header>
+      <main className="privacy-main">
+        {content && <div dangerouslySetInnerHTML={{__html: content.innerHTML}} />}
+      </main>
+      <footer className="privacy-footer">© 2026 Shifa Ltd. PayXchange is a product of Shifa Ltd. All rights reserved.</footer>
+    </div>
+  );
+}
+
+// Minimal hash router: '#/admin' → admin area, '#/privacy-policy' → privacy page, anything else → landing page.
 function Root(){
   const [hash,setHash]=useState(window.location.hash);
   useEffect(()=>{
@@ -823,7 +2805,10 @@ function Root(){
     window.addEventListener('hashchange',on);
     return()=>window.removeEventListener('hashchange',on);
   },[]);
-  const isAdmin=hash.replace(/^#/,'').replace(/^\//,'').toLowerCase().startsWith('admin');
+  const route=hash.replace(/^#/,'').replace(/^\//,'').toLowerCase();
+  const isAdmin=route.startsWith('admin');
+  const isPrivacy=route === 'privacy-policy' || route.startsWith('privacy-policy/');
+  if(isPrivacy) return <PrivacyPolicy/>;
   return isAdmin ? <AdminRoot/> : <App/>;
 }
 
